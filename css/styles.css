@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-header {
+    margin-bottom: 10px; /* Jarak antara bagian atas header dengan bagian pencarian */
+}
+
+#logo {
+    max-width: 200px; /* Sesuaikan ukuran logo */
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.book-catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.book-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; /* Membuat posisi relative untuk memudahkan penataan harga diskon */
+}
+
+.book-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.book-item h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.book-item p {
+    font-size: 0.9em;
+    /* color: #333; */
+}
+
+.book-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.book-item a:hover {
+    background-color: #555;
+}
+
+/* Tambahkan styling ini ke styles.css */
+.discount-price {
+    font-size: 1em;
+    color: #d9534f; /* Warna merah untuk harga diskon */
+    font-weight: bold;
+    text-decoration: line-through; /* Tambahkan coretan jika harga diskon */
+}
+
+.new-price {
+    font-size: 1em;
+    color: #5cb85c; /* Warna hijau untuk harga baru */
+    font-weight: bold;
+    background-color: #ffff00; /* Warna kuning untuk background */
+    padding: 5px; /* Padding untuk ruang di sekitar teks */
+    border-radius: 3px; /* Opsional: untuk membulatkan sudut */
+    display: block; /* Menjadikan harga diskon tampil di baris baru */
+    margin-top: 5px; /* Memberikan jarak dengan harga normal */
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Atur tinggi sesuai kebutuhan */
+    font-size: 1.2em;
+    color: #555;
+}
+
+.header-container {
+    display: flex;
+    align-items: center; /* Memastikan elemen berada pada garis vertikal yang sama */
+}
+
+#search-input {
+    flex-grow: 1; /* Mengambil ruang tersisa */
+    margin: 0px 20px; /* Jarak antara input dan tombol Cari */
+    width: 320px;
+}
+
+#home-button {
+    margin-left: 10px; /* Jarak antara tombol Cari dan tombol Home */
+}
+
+.dropdown {
+    margin-left: 10px; /* Jarak antara tombol Home dan tombol Dropdown */
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #search-input {
+        width: 100%;
+        max-width: none;
+        margin: 10px 0;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home-button {
+        margin: 10px 0;
+    }
+
+    .dropdown {
+        margin: 10px 0;
+    }
+
+    .book-item {
+        width: calc(50% - 20px); /* Adjust width to fit two items per row */
+    }
+}
+
+@media (max-width: 576px) {
+    .book-item {
+        width: 100%; /* Adjust width to full width for one item per row */
+    }
+}
