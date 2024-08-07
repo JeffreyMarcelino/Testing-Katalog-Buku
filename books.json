@@ -9,8 +9,8 @@
             {
               "ISBN": "9781524745318",
               "TITLE": "#WHAM!, GEORGE MICHAEL AND ME",
-              "PRICE": "90.000",
-              "DISCOUNT_PRICE": "80.000",
+              "Normal": "90.000",
+              "Harga BBW": "80.000",
               "COVER_URL": "https://m.media-amazon.com/images/I/41LhXWNDnOL._SY445_SX342_.jpg"
             }
           ]
@@ -21,29 +21,29 @@
             {
               "ISBN": "9780593083451",
               "TITLE": "#DREAM FIRST, DETAILS LATER",
-              "PRICE": "90.000",
-              "DISCOUNT_PRICE": "85.000",
+              "Normal": "90.000",
+              "Harga BBW": "85.000",
               "COVER_URL": "https://images2.penguinrandomhouse.com/cover/9780593083451"
             },
             {
               "ISBN": "9781591842729",
               "TITLE": "#IT'S NOT ABOUT THE COFFEE",
-              "PRICE": "70.000",
-              "DISCOUNT_PRICE": "65.000",
+              "Normal": "70.000",
+              "Harga BBW": "65.000",
               "COVER_URL": "https://m.media-amazon.com/images/I/61s6FjZDUvL._SY466_.jpg"
             },
             {
               "ISBN": "9780525509035",
               "TITLE": "#THE PRICE OF PEACE",
-              "PRICE": "115.000",
-              "DISCOUNT_PRICE": "105.000",
+              "Normal": "115.000",
+              "Harga BBW": "105.000",
               "COVER_URL": "https://cdn2.penguin.com.au/covers/400/9780525509035.jpg"
             },
             {
               "ISBN": "9780593084007",
               "TITLE": "#FANOCRACY",
-              "PRICE": "90.000",
-              "DISCOUNT_PRICE": "85.000",
+              "Normal": "90.000",
+              "Harga BBW": "85.000",
               "COVER_URL": "https://m.media-amazon.com/images/I/81iL1xhJ1PL._SY466_.jpg"
             }
           ]
@@ -59,8 +59,8 @@
             {
               "ISBN": "9781647220266",
               "TITLE": "Harry Potter: The Broom Collection: & Other Props from the Wizarding World",
-              "PRICE": "90.000",
-              "DISCOUNT_PRICE": null,
+              "Normal": "90.000",
+              "Harga BBW": null,
               "COVER_URL": "https://m.media-amazon.com/images/I/41OGCzx7rJL._SX342_SY445_.jpg"
             }
           ]
@@ -76,8 +76,8 @@
             {
               "ISBN": "9780394800165",
               "TITLE": "The Very Hungry Caterpillar",
-              "PRICE": "50.000",
-              "DISCOUNT_PRICE": "45.000",
+              "Normal": "50.000",
+              "Harga BBW": "45.000",
               "COVER_URL": "https://m.media-amazon.com/images/I/81qsstEtrgL._SX679_.jpg"
             }
           ]
@@ -88,8 +88,8 @@
             {
               "ISBN": "9782345678901",
               "TITLE": "Green Eggs and Ham",
-              "PRICE": "40.000",
-              "DISCOUNT_PRICE": "35.000",
+              "Normal": "40.000",
+              "Harga BBW": "35.000",
               "COVER_URL": "https://m.media-amazon.com/images/I/71e4ln93HOL._SY466_.jpg"
             }
           ]

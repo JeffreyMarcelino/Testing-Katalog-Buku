@@ -92,24 +92,6 @@ button:hover {
     background-color: #555;
 }
 
-/* Tambahkan styling ini ke styles.css */
-.discount-price {
-    font-size: 1em;
-    color: #d9534f; /* Warna merah untuk harga diskon */
-    font-weight: bold;
-    text-decoration: line-through; /* Tambahkan coretan jika harga diskon */
-}
-
-.new-price {
-    font-size: 1em;
-    color: #5cb85c; /* Warna hijau untuk harga baru */
-    font-weight: bold;
-    background-color: #ffff00; /* Warna kuning untuk background */
-    padding: 5px; /* Padding untuk ruang di sekitar teks */
-    border-radius: 3px; /* Opsional: untuk membulatkan sudut */
-    display: block; /* Menjadikan harga diskon tampil di baris baru */
-    margin-top: 5px; /* Memberikan jarak dengan harga normal */
-}
 
 .loading {
     display: flex;
@@ -137,6 +119,84 @@ button:hover {
 
 .dropdown {
     margin-left: 10px; /* Jarak antara tombol Home dan tombol Dropdown */
+}
+
+.card {
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    padding-top: 50px;
+    width: 100%; /* Pastikan gambar sesuai dengan lebar card */
+    height: 50%; /* Pertahankan rasio aspek gambar */
+    object-fit: contain; /* Pertahankan ukuran gambar asli tanpa pemangkasan */
+}
+
+/* Tambahkan styling untuk harga baru berdasarkan kategori */
+.new-price-children {
+    background-color: #CF1A21; /* Warna untuk Children */
+    color: #ffffff;
+}
+
+.new-price-fiction {
+    background-color: #F8E52D; /* Warna untuk Fiction */
+    color: #000000;
+}
+
+.new-price-non-fiction {
+    background-color: #236CB6 ; /* Warna untuk Non Fiction */
+    color: #000000;
+}
+
+.new-price-korean {
+    background-color: #FEA6D3; /* Warna untuk Korean Book */
+    color: #000000;
+}
+
+/* Update the background color for the book-price based on category */
+.book-price.new-price-children {
+    background-color: #CF1A21; /* Warna untuk Children */
+    color: #ffffff;
+}
+
+.book-price.new-price-fiction {
+    background-color: #F8E52D; /* Warna untuk Fiction */
+    color: #000000;
+}
+
+.book-price.new-price-non-fiction {
+    background-color: #236CB6; /* Warna untuk Non Fiction */
+    color: #000000;
+}
+
+.book-price.new-price-korean {
+    background-color: #FEA6D3; /* Warna untuk Korean Book */
+    color: #000000;
+}
+
+.book-price .price-label {
+    margin: 0 5px;
+}
+
+.book-price .new-price {
+    margin-left: 5px;
+    padding: 2px 5px; /* Sesuaikan padding untuk tampilan yang lebih baik */
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.book-price {
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.normal-price {
+    font-size: 1em;
+    color: #d9534f;
+    font-weight: bold;
+    text-decoration: line-through;
 }
 
 

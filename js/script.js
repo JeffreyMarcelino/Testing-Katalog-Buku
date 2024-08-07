@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 1000);
     });
 
-    document.getElementById('home-button').addEventListener('click', function() {
+    document.getElementById('all-button').addEventListener('click', function() {
         document.getElementById('search-input').value = '';
         filteredBooks = allBooks; // Reset ke semua buku
         currentPage = 1; // Reset ke halaman pertama
@@ -52,16 +52,32 @@ document.addEventListener("DOMContentLoaded", function() {
         setupPagination(filteredBooks.length, booksPerPage);
     });
 
-    document.querySelectorAll('.category-item').forEach(item => {
-        item.addEventListener('click', function(e) {
-            e.preventDefault();
-            const category = this.getAttribute('data-category');
-            filteredBooks = filterBooksByCategory(allBooks, category);
-            currentPage = 1; // Reset ke halaman pertama saat memilih kategori
-            displayBooks(filteredBooks, currentPage);
-            setupPagination(filteredBooks.length, booksPerPage);
-        });
+    document.getElementById('children-button').addEventListener('click', function() {
+        filterByCategory("CHILDREN");
     });
+
+    document.getElementById('fiction-button').addEventListener('click', function() {
+        filterByCategory("FICTION");
+    });
+
+    document.getElementById('non-fiction-button').addEventListener('click', function() {
+        filterByCategory("NON FICTION");
+    });
+
+    document.getElementById('korean-button').addEventListener('click', function() {
+        filterByCategory("KOREAN BOOK");
+    });
+
+    document.getElementById('bca-button').addEventListener('click', function() {
+        filterByCategory("JUDUL PILIHAN BCA");
+    });
+
+    function filterByCategory(category) {
+        filteredBooks = allBooks.filter(book => book.CATEGORY.startsWith(category));
+        currentPage = 1; // Reset ke halaman pertama
+        displayBooks(filteredBooks, currentPage);
+        setupPagination(filteredBooks.length, booksPerPage);
+    }
     
     function displayBooks(books, page) {
         const start = (page - 1) * booksPerPage;
@@ -69,71 +85,101 @@ document.addEventListener("DOMContentLoaded", function() {
         const paginatedBooks = books.slice(start, end);
         const bookCatalog = document.getElementById('book-catalog');
         bookCatalog.innerHTML = '';
-
+    
         // Display first half of the books
         paginatedBooks.slice(0, halfBooksPerPage).forEach(book => {
             const bookItem = createBookItem(book);
             bookCatalog.appendChild(bookItem);
         });
-
+    
         // Add a spacer
         const spacer = document.createElement('div');
         spacer.style.flexBasis = '100%';
         bookCatalog.appendChild(spacer);
-
+    
         // Display second half of the books
         paginatedBooks.slice(halfBooksPerPage).forEach(book => {
             const bookItem = createBookItem(book);
             bookCatalog.appendChild(bookItem);
         });
     }
+    
 
     function createBookItem(book) {
         const bookItem = document.createElement('div');
-        bookItem.className = 'book-item';
-
+        bookItem.className = 'card';
+        bookItem.style.width = '18rem'; // Set width of the card
+    
+        // Create and append the book cover
         if (book.COVER_URL) {
             const bookCover = document.createElement('img');
             bookCover.src = book.COVER_URL;
+            bookCover.className = 'card-img-top';
             bookCover.alt = book.TITLE;
-            bookCover.onload = function() {
-                if (bookCover.width > 177 && bookCover.height < 100) {
-                    const marginTop = 100;
-                    bookCover.style.marginTop = `${marginTop}px`;
-                } else if (bookCover.width > 177 && bookCover.height < 124) {
-                    const marginTop = 60;
-                    bookCover.style.marginTop = `${marginTop}px`;
-                } else if (bookCover.width > 199 && bookCover.height < 250) {
-                    const marginTop = 50;
-                    bookCover.style.marginTop = `${marginTop}px`;
-                }
-            };
             bookItem.appendChild(bookCover);
         }
-
-        const bookTitle = document.createElement('h2');
+    
+        // Create and append the card body
+        const cardBody = document.createElement('div');
+        cardBody.className = 'card-body';
+        bookItem.appendChild(cardBody);
+    
+        // Create and append the title
+        const bookTitle = document.createElement('h5');
+        bookTitle.className = 'card-title';
         bookTitle.textContent = book.TITLE;
-        bookItem.appendChild(bookTitle);
-
+        cardBody.appendChild(bookTitle);
+    
+        // Create and append the ISBN
         const bookIsbn = document.createElement('p');
+        bookIsbn.className = 'card-text';
         bookIsbn.textContent = `ISBN: ${book.ISBN}`;
-        bookItem.appendChild(bookIsbn);
-
-        const priceInfo = document.createElement('p');
-        if (book.DISCOUNT_PRICE) {
-            priceInfo.innerHTML = `Price: <span class="discount-price">Rp. ${book.PRICE}</span> <span class="new-price">Disc Price: Rp. ${book.DISCOUNT_PRICE}</span>`;
-        } else {
-            priceInfo.textContent = `Price: Rp. ${book.PRICE}`;
+        cardBody.appendChild(bookIsbn);
+    
+        // Create and append the normal price
+        const normalPrice = document.createElement('p');
+        normalPrice.className = 'card-text';
+        normalPrice.innerHTML = `Normal: <span class="normal-price">Rp. ${book.Normal}</span>`;
+        cardBody.appendChild(normalPrice);
+    
+        // Create and append the BBW price if available
+        if (book['Harga BBW']) {
+            const bbwPriceWrapper = document.createElement('div');
+            bbwPriceWrapper.className = `book-price ${getPriceClass(book.CATEGORY)}`;
+    
+            const bbwPriceLabel = document.createElement('span');
+            bbwPriceLabel.className = 'price-label';
+            bbwPriceLabel.textContent = 'Harga BBW:';
+    
+            const bbwPrice = document.createElement('span');
+            bbwPrice.className = 'new-price';
+            bbwPrice.textContent = `Rp. ${book['Harga BBW']}`;
+    
+            bbwPriceWrapper.appendChild(bbwPriceLabel);
+            bbwPriceWrapper.appendChild(bbwPrice);
+            cardBody.appendChild(bbwPriceWrapper);
         }
-        bookItem.appendChild(priceInfo);
-
-        const bookCategory = document.createElement('p');
-        const categoryNameOnly = book.CATEGORY.split(' ')[0]; // Mengambil hanya categoryName
-        bookCategory.textContent = `Category: ${categoryNameOnly}`;
-        bookItem.appendChild(bookCategory);
-
+    
         return bookItem;
     }
+    
+
+function getPriceClass(category) {
+    if (category.startsWith('CHILDREN')) {
+        return 'new-price-children';
+    } else if (category.startsWith('FICTION')) {
+        return 'new-price-fiction';
+    } else if (category.startsWith('NON FICTION')) {
+        return 'new-price-non-fiction';
+    } else if (category.startsWith('KOREAN BOOK')) {
+        return 'new-price-korean';
+    }
+    return '';
+}
+
+    
+    
+    
 
     function setupPagination(totalBooks, booksPerPage) {
         const pagination = document.getElementById('pagination');
@@ -193,16 +239,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function filterBooks(books, searchTerm) {
-        return books.filter(book =>
+        return books.filter(book => 
             book.TITLE.toLowerCase().includes(searchTerm) ||
-            book.CATEGORY.toLowerCase().includes(searchTerm) ||
-            book.ISBN.includes(searchTerm)
+            book.ISBN.toLowerCase().includes(searchTerm) ||
+            book.CATEGORY.toLowerCase().includes(searchTerm)
         );
     }
-
-    function filterBooksByCategory(books, category) {
-        return books.filter(book =>
-            book.CATEGORY.startsWith(category)
-        );
-    }
+    
 });
