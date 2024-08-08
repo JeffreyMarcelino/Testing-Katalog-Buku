@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 category.subCategories.forEach(subCategory => {
                     accumulator.push(...subCategory.books.map(book => ({
                         ...book,
-                        CATEGORY: `${category.categoryName} ${subCategory.subCategoryName}`
+                        CATEGORY: `${category.categoryName} ${subCategory.subCategoryName}`,
+                        subCategoryName: subCategory.subCategoryName // Tambahkan subCategoryName
                     })));
                 });
                 return accumulator;
@@ -157,40 +158,55 @@ document.addEventListener("DOMContentLoaded", function() {
             cardBody.appendChild(bbwPriceWrapper);
         }
     
-        // Create and append the normal price
-        const normalPrice = document.createElement('p');
-        normalPrice.className = 'card-text normal-price'; // Add class for styling
-        normalPrice.innerHTML = `normal: <span class="normal-price">RP. ${book.Normal}</span>`;
-        cardBody.appendChild(normalPrice);
+        // Create and append the subCategoryName
+        const subCategory = document.createElement('p');
+        subCategory.className = 'card-text sub-category'; // Add class for styling
+        subCategory.innerHTML = `<span class="sub-category-name">${book.subCategoryName}</span>`;
+        cardBody.appendChild(subCategory);
 
         return bookItem;
     }
     
     
 
-function getPriceClass(category) {
-    if (category.startsWith('CHILDREN')) {
-        return 'new-price-children';
-    } else if (category.startsWith('FICTION')) {
-        return 'new-price-fiction';
-    } else if (category.startsWith('NON FICTION')) {
-        return 'new-price-non-fiction';
-    } else if (category.startsWith('KOREAN BOOK')) {
-        return 'new-price-korean';
+    function getPriceClass(category) {
+        if (category.startsWith('CHILDREN')) {
+            return 'new-price-children';
+        } else if (category.startsWith('FICTION')) {
+            return 'new-price-fiction';
+        } else if (category.startsWith('NON FICTION')) {
+            return 'new-price-non-fiction';
+        } else if (category.startsWith('KOREAN BOOK')) {
+            return 'new-price-korean';
+        } else if (category.startsWith('JUDUL PILIHAN BCA')) {
+            return 'new-price-bca';
+        }
+        return '';
     }
-    return '';
-}
+    
 
-    
-    
-    
 
     function setupPagination(totalBooks, booksPerPage) {
         const pagination = document.getElementById('pagination');
         pagination.innerHTML = '';
         const pageCount = Math.ceil(totalBooks / booksPerPage);
-
-        for (let i = 1; i <= pageCount; i++) {
+    
+        const isMobile = window.innerWidth <= 576;
+        const maxVisiblePages = isMobile ? 3 : 7; // Tampilkan maksimal 3 halaman pada mobile, 7 pada desktop
+        const halfVisiblePages = Math.floor(maxVisiblePages / 2);
+    
+        let startPage = currentPage - halfVisiblePages;
+        let endPage = currentPage + halfVisiblePages;
+    
+        if (startPage < 1) {
+            startPage = 1;
+            endPage = Math.min(maxVisiblePages, pageCount);
+        } else if (endPage > pageCount) {
+            endPage = pageCount;
+            startPage = Math.max(1, pageCount - maxVisiblePages + 1);
+        }
+    
+        for (let i = startPage; i <= endPage; i++) {
             const pageItem = document.createElement('li');
             pageItem.className = 'page-item' + (i === currentPage ? ' active' : '');
             const pageLink = document.createElement('a');
@@ -206,41 +222,45 @@ function getPriceClass(category) {
             pageItem.appendChild(pageLink);
             pagination.appendChild(pageItem);
         }
-
-        const prevItem = document.createElement('li');
-        prevItem.className = 'page-item';
-        const prevLink = document.createElement('a');
-        prevLink.className = 'page-link';
-        prevLink.href = '#';
-        prevLink.textContent = 'Previous';
-        prevLink.addEventListener('click', function(e) {
-            e.preventDefault();
-            if (currentPage > 1) {
-                currentPage--;
-                displayBooks(filteredBooks, currentPage);
-                setupPagination(totalBooks, booksPerPage);
-            }
-        });
-        prevItem.appendChild(prevLink);
-        pagination.insertBefore(prevItem, pagination.firstChild);
-
-        const nextItem = document.createElement('li');
-        nextItem.className = 'page-item';
-        const nextLink = document.createElement('a');
-        nextLink.className = 'page-link';
-        nextLink.href = '#';
-        nextLink.textContent = 'Next';
-        nextLink.addEventListener('click', function(e) {
-            e.preventDefault();
-            if (currentPage < pageCount) {
-                currentPage++;
-                displayBooks(filteredBooks, currentPage);
-                setupPagination(totalBooks, booksPerPage);
-            }
-        });
-        nextItem.appendChild(nextLink);
-        pagination.appendChild(nextItem);
+    
+        // Add Previous and Next buttons only if not on mobile
+        if (!isMobile) {
+            const prevItem = document.createElement('li');
+            prevItem.className = 'page-item';
+            const prevLink = document.createElement('a');
+            prevLink.className = 'page-link';
+            prevLink.href = '#';
+            prevLink.textContent = 'Previous';
+            prevLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayBooks(filteredBooks, currentPage);
+                    setupPagination(totalBooks, booksPerPage);
+                }
+            });
+            prevItem.appendChild(prevLink);
+            pagination.insertBefore(prevItem, pagination.firstChild);
+    
+            const nextItem = document.createElement('li');
+            nextItem.className = 'page-item';
+            const nextLink = document.createElement('a');
+            nextLink.className = 'page-link';
+            nextLink.href = '#';
+            nextLink.textContent = 'Next';
+            nextLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (currentPage < pageCount) {
+                    currentPage++;
+                    displayBooks(filteredBooks, currentPage);
+                    setupPagination(totalBooks, booksPerPage);
+                }
+            });
+            nextItem.appendChild(nextLink);
+            pagination.appendChild(nextItem);
+        }
     }
+    
 
     function filterBooks(books, searchTerm) {
         return books.filter(book => 
@@ -248,6 +268,5 @@ function getPriceClass(category) {
             book.ISBN.toLowerCase().includes(searchTerm) ||
             book.CATEGORY.toLowerCase().includes(searchTerm)
         );
-    }
-    
+    }    
 });

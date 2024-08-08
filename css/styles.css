@@ -149,13 +149,18 @@ button:hover {
 }
 
 .new-price-non-fiction {
-    background-color: #538DCA; /* Warna untuk Non Fiction */
+    background-color: #92b6f0; /* Warna untuk Non Fiction */
     color: #000000;
 }
 
 .new-price-korean {
     background-color: #FEA6D3; /* Warna untuk Korean Book */
     color: #000000;
+}
+
+.new-price-bca {
+    background-color: #0061AF; /* Warna latar belakang untuk Judul Pilihan BCA */
+    color: #ffffff; 
 }
 
 /* Update the background color for the book-price based on category */
@@ -170,13 +175,18 @@ button:hover {
 }
 
 .book-price.new-price-non-fiction {
-    background-color: #538DCA; /* Warna untuk Non Fiction */
+    background-color: #92b6f0; /* Warna untuk Non Fiction */
     color: #000000;
 }
 
 .book-price.new-price-korean {
     background-color: #FEA6D3; /* Warna untuk Korean Book */
     color: #000000;
+}
+
+.book-price.new-price-bca {
+    background-color: #0061AF; /* Warna latar belakang untuk Judul Pilihan BCA */
+    color: #ffffff; 
 }
 
 .book-price .price-label {
@@ -204,13 +214,13 @@ button:hover {
     width: 100%;
 }
 
-.normal-price {
+/* .normal-price {
     margin-left: 5px;
     font-size: 1em;
     color: #d9534f;
     font-weight: bold;
     text-decoration: line-through;
-}
+} */
 
 .card-body {
     display: flex;
@@ -237,18 +247,16 @@ button:hover {
 .card-text.isbn {
     margin-top: 10px; /* Margin atas untuk ISBN */
     margin-bottom: 10px; /* Margin bawah untuk ISBN */
-    margin-left: 5px;
+    /* margin-left: 0 5px; */
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.card-text.normal-price {
-    margin-top: 10px; /* Margin atas untuk harga normal */
-    margin-bottom: 10px; /* Margin bawah untuk harga normal */
-    color: #000000;
-    font-weight: normal;
-    text-decoration: none;
+.card-text.sub-category {
+    margin-top: 10px; /* Margin atas untuk ISBN */
+    margin-bottom: 10px; /* Margin bawah untuk ISBN */
+    /* margin-left: 5px; */
     display: flex;
     justify-content: center;
     width: 100%;

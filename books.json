@@ -71,26 +71,1521 @@
       "categoryName": "CHILDREN",
       "subCategories": [
         {
-          "subCategoryName": "C Picture Books",
+          "subCategoryName": "ACTIVITY BOOK",
           "books": [
             {
-              "ISBN": "9780394800165",
-              "TITLE": "The Very Hungry Caterpillar",
-              "Normal": "50.000",
+              "ISBN": "9781642690279",
+              "TITLE": "ACTIVE MINDS W&E: MY 1ST LB (ALPHABET) AGES 4+",
+              "Normal": "",
               "Harga BBW": "45.000",
-              "COVER_URL": "https://m.media-amazon.com/images/I/81qsstEtrgL._SX679_.jpg"
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781642690279_a_576x.png?v=1705631456"
+            },
+            {
+              "ISBN": "9781642692327",
+              "TITLE": "ACTIVE MINDS W&E: SIGHT WORDS LB AGES 5+",
+              "Normal": "",
+              "Harga BBW": "45.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781642692327_a_576x.png?v=1705631574"
+            },
+            {
+              "ISBN": "9781788102193",
+              "TITLE": "EARLY MAN: EPIC STICKER & ACTIVITY",
+              "Normal": "",
+              "Harga BBW": "45.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781788102193_a_576x.png?v=1690268215"
+            },
+            {
+              "ISBN": "9781505088434",
+              "TITLE": "UNICORNS JEWELS AND SPARKLES",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://i.pinimg.com/564x/6c/87/28/6c87289b17e0c4cafd0e6e697c55c3d0.jpg"
+            },
+            {
+              "ISBN": "9781505088199",
+              "TITLE": "FROZEN II CREATE A SCENE",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://m.media-amazon.com/images/I/9168wdveelL._AC_SL1500_.jpg"
+            },
+            {
+              "ISBN": "9781642693836",
+              "TITLE": "ACTIVE MINDS SUPER DUPER DOODLES",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://m.media-amazon.com/images/I/91BOII2PTnL._SY522_.jpg"
+            },
+            {
+              "ISBN": "9781642693843",
+              "TITLE": "ACTIVE MINDS STEM P POWER",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://m.media-amazon.com/images/I/81e90eXc+cL._SY522_.jpg"
+            },
+            {
+              "ISBN": "9781438007670",
+              "TITLE": "TRAIN YOUR BRAIN PUZZ BK: MIND-MELTING CONUNDRUMS",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781438007670_1_750x.jpg?v=1648791982"
+            },
+            {
+              "ISBN": "9781788815406",
+              "TITLE": "I CAN COUNT! NUMBERS",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781788815406_a_576x.png?v=1691636537"
+            },
+            {
+              "ISBN": "9781788815376",
+              "TITLE": "MY FIRST WIPE CLEAN ACTIVITY: I CAN WRITE! FIRST WORDS",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781788815376_a_576x.png?v=1706261109"
+            },
+            {
+              "ISBN": "9781788815390",
+              "TITLE": "I CAN WRITE! ALPHABET",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781788815390_a_576x.png?v=1706256270"
+            },
+            {
+              "ISBN": "9781837952748",
+              "TITLE": "LOOK! THERES'S A UNICORN",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781837952748_a_576x.png?v=1715573097"
+            },
+            {
+              "ISBN": "9781800589971",
+              "TITLE": "BUNNICORN AND FRIENDS ACTIVITY BOOK",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781800589971_a_576x.png?v=1710144662"
+            },
+            {
+              "ISBN": "9788854415713",
+              "TITLE": "MORE THAN COUNTING",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9788854415713_1_576x.jpg?v=1648788398"
+            },
+            {
+              "ISBN": "9788854415720",
+              "TITLE": "MORE THAN DRAWING",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9788854415720_1_750x.jpg?v=1648788410"
+            },
+            {
+              "ISBN": "9781912754991",
+              "TITLE": "LET'S LEARN FIRST: WORD FAMILIES",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781912754991_a_576x.png?v=1700709090"
+            },
+            {
+              "ISBN": "9781527010161",
+              "TITLE": "SUNSHINE FUN: ACTIVITY BOOK AND 2-IN-1 JIGSAW P",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781527010161_1_750x.jpg?v=1648787627"
+            },
+            {
+              "ISBN": "9781803370361",
+              "TITLE": "CREATE AND PLAY DINOS COLORING & ACTIVITY BOOK",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781803370361_a_576x.png?v=1710144318"
+            },
+            {
+              "ISBN": "9781526381682",
+              "TITLE": "PAT-A-CAKE PLAYTIME: SPACE TRIP: WIPE-CLEAN BOOK WITH PEN",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781526381682_1_750x.jpg?v=1685069753"
+            },
+            {
+              "ISBN": "9781861477712",
+              "TITLE": "FUN TIME TEDDY BEAR STICKERS: STICKER AND COLOUR-IN PLAYBOOK WITH OVER 200 REUSABLE STICKERS",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781861477712_1_288x.jpg?v=1678434947"
+            },
+            {
+              "ISBN": "9781789582598",
+              "TITLE": "MAGNETIC PLAY & LEARN: MAGICAL UNICORNS",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781789582598_a_576x.png?v=1709015185"
+            },
+            {
+              "ISBN": "9781785575624",
+              "TITLE": "SIMPLE MATHS",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781785575624_1_cc72ec67-c281-4883-b11e-6c3835a107e2_750x.jpg?v=1648783134"
+            },
+            {
+              "ISBN": "9781785575686",
+              "TITLE": "ANSWER & REVEAL 2+: 123",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781785575686_1_550d8e4d-57a2-4283-98f8-fb6bc1666bd6_750x.jpg?v=1648785859"
+            },
+            {
+              "ISBN": "863340000310",
+              "TITLE": "FIVE SENSES ANATOMY ADVENTURE: SENSE-ATIONAL VOYAGE (BROWN BOX)",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://sg.bbwbooks.com/cdn/shop/products/863340000310_2000x.jpg?v=1614276001"
+            },
+            {
+              "ISBN": "9781912746910",
+              "TITLE": "123 LET'S LEARN NUMBERS (WIPE CLEAN BOX SETS)",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781912746910_a_576x.png?v=1700711611"
+            },
+            {
+              "ISBN": "9781912746927",
+              "TITLE": "ABC LET'S LEARN LETTERS (WIPE CLEAN BOX SETS)",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://m.media-amazon.com/images/I/818nWBP2Q8L._SY522_.jpg"
+            },
+            {
+              "ISBN": "9781787006300",
+              "TITLE": "WIPE CLEAN : I CAN DO IT! ADDING UP",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781787006300_a_576x.png?v=1700708822"
+            },
+            {
+              "ISBN": "9781787006317",
+              "TITLE": "WIPE CLEAN : I CAN DO IT! TIMES TABLES",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781787006317_1_750x.jpg?v=1649909084"
+            },
+            {
+              "ISBN": "9781787006324",
+              "TITLE": "WIPE CLEAN : I CAN DO IT! DIVIDING SUMS",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781787006324_a_576x.png?v=1700708055"
+            },
+            {
+              "ISBN": "9781912738373",
+              "TITLE": "WIPE CLEAN PLAYDAY: JUNGLE NUMBER FIN",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781912738373_a_576x.png?v=1690258512"
+            },
+            {
+              "ISBN": "9781783739936",
+              "TITLE": "I CAN MAKE IT-JUNGLE",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781783739936_1_750x.jpg?v=1648786711"
+            },
+            {
+              "ISBN": "9781912738359",
+              "TITLE": "WIPE CLEAN PLAYDAY : FARM SHAPES & SIZES",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781912738359_1_750x.jpg?v=1648786852"
+            },
+            {
+              "ISBN": "9781838520298",
+              "TITLE": "SEARCH & SEEK WIPE CLEAN: CAN YOU FIND HAPPY COW?",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781838520298_1_750x.jpg?v=1648787516"
+            },
+            {
+              "ISBN": "9781785579363",
+              "TITLE": "TINY TOTS LOOK AND FIND: WORDS",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781785579363_1_ef40fe0f-e0d3-457c-9469-e3d838157d1d_750x.jpg?v=1648787647"
+            },
+            {
+              "ISBN": "9781785574436",
+              "TITLE": "TINY TOTS LOOK AND FIND: COLOURS",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781785574436_001-page1_750x.jpg?v=1648787379"
+            },
+            {
+              "ISBN": "9781912738366",
+              "TITLE": "WIPE CLEAN PLAYDAY : FUN ON THE MOVE",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781912738366_a_576x.png?v=1690256109"
+            },
+            {
+              "ISBN": "9781838520311",
+              "TITLE": "SEARCH & SEEK WIPE CLEAN: CAN YOU FIND PLAYFUL PUPPY?",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781838520311_a_576x.png?v=1699586339"
+            },
+            {
+              "ISBN": "9781787006348",
+              "TITLE": "WIPE CLEAN : I CAN DO IT! TAKING AWAY",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781787006348_a_576x.png?v=1700708550"
+            },
+            {
+              "ISBN": "9781912738342",
+              "TITLE": "WIPE CLEAN PLAYDAY: COLOURS",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781912738342_a_576x.png?v=1699585736"
+            },
+            {
+              "ISBN": "9781784680343",
+              "TITLE": "TAKE ME HOME - LITTLE MEERKAT",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781784680343_1_1100x.jpg?v=1648782917"
+            },
+            {
+              "ISBN": "9781787006355",
+              "TITLE": "WIPE CLEAN : I CAN DO IT! PHONICS WORD SOUNDS",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781787006355_a_576x.png?v=1700708464"
+            },
+            {
+              "ISBN": "9781789580594",
+              "TITLE": "PULL THE TAB MATHS- ADDING UP",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/let-s-learn-adding-up-pull-the-tab-9781789580594-28066885533874_288x.jpg?v=1648787427"
+            },
+            {
+              "ISBN": "9781788004312",
+              "TITLE": "PRESS OUT AND DECORATE: NARWHALS AND MERMAIDS",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781788004312_a_576x.png?v=1689565841"
+            },
+            {
+              "ISBN": "9781912754779",
+              "TITLE": "SLIDE & SEEK TIMES TABLES",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781912754779_1_20210c30-e070-4d6b-9ee3-1875a2f4daf7_1100x.jpg?v=1648786818"
+            },
+            {
+              "ISBN": "9781786270245",
+              "TITLE": "THE SUPERHERO ADVENTURE PLAYSET",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781786270245_1_8c69ad16-70c6-4e26-9fe6-1f792488ab97_1100x.jpg?v=1684379339"
+            },
+            {
+              "ISBN": "9781788109680",
+              "TITLE": "MY SPEEDY RACERS PLAY SET",
+              "Normal": "",
+              "Harga BBW": "105.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781788109680_001-page1_750x.jpg?v=1649909605"
+            },
+            {
+              "ISBN": "9788854413887",
+              "TITLE": "FIND ME! ADVENTURES IN THE FOREST WITH BERNARD THE WOLF",
+              "Normal": "",
+              "Harga BBW": "105.000",
+              "COVER_URL": "https://m.media-amazon.com/images/I/81PAkQQU1hL._AC_UF1000,1000_QL80_.jpg"
+            },
+            {
+              "ISBN": "9788854413894",
+              "TITLE": "FIND ME! OCEAN ADVENTURES WITH BERNARD THE WOLF",
+              "Normal": "",
+              "Harga BBW": "105.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9788854413894_a_576x.png?v=1699598398"
+            },
+            {
+              "ISBN": "9781947788350",
+              "TITLE": "LITTLE LEARNING WRITE AND WIPE: NUMBERS",
+              "Normal": "",
+              "Harga BBW": "105.000",
+              "COVER_URL": "https://m.media-amazon.com/images/I/71+ATRyAayL._AC_UF1000,1000_QL80_.jpg"
+            },
+            {
+              "ISBN": "9781947788367",
+              "TITLE": "LITTLE LEARNING WRITE AND WIPE: FIRST WORDS",
+              "Normal": "",
+              "Harga BBW": "105.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781947788367_001-page1_1100x.jpg?v=1648788044"
+            },
+            {
+              "ISBN": "9781789056051",
+              "TITLE": "ULTIMATE ACTIVITY WALLET: MY AWESOME ACTIVITY PACK",
+              "Normal": "",
+              "Harga BBW": "115.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781789056051_a_750x.png?v=1706251699"
+            },
+            {
+              "ISBN": "9781789059922",
+              "TITLE": "TINY TOTS BACK TO SCHOOL B/SET: MY FIRST LEARNING PACK (UKNP)",
+              "Normal": "",
+              "Harga BBW": "115.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781789059922_a_576x.png?v=1700702336"
+            },
+            {
+              "ISBN": "9781787007307",
+              "TITLE": "FOLD YOUR OWN DEADLY DANGEROUS DINOSAURS",
+              "Normal": "",
+              "Harga BBW": "115.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781787007307_a_750x.png?v=1706260449"
+            },
+            {
+              "ISBN": "9781782099765",
+              "TITLE": "CONVERT PLAYBOOK FARM",
+              "Normal": "",
+              "Harga BBW": "140.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781782099765_FRONT_32fa2a6d-6f95-47cb-a778-038408283acc_1100x.jpg?v=1648784715"
+            },
+            {
+              "ISBN": "9781801059305",
+              "TITLE": "EXPLORER BOOK + MODEL KIT: MY INCREDIBLE DINOSAUR EXPEDITION",
+              "Normal": "",
+              "Harga BBW": "210.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781801059305_a_576x.png?v=1715570781"
+            },
+            {
+              "ISBN": "9781801059329",
+              "TITLE": "EXPLORER BOOK + MODEL KIT: MY INCREDIBLE OCEAN EXPEDITION",
+              "Normal": "",
+              "Harga BBW": "210.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781801059329_a_576x.png?v=1716431751"
+            },
+            {
+              "ISBN": "9781801059312",
+              "TITLE": "EXPLORER BOOK + MODEL KIT: MY INCREDIBLE ANIMAL S.O.S. EXPEDITION",
+              "Normal": "",
+              "Harga BBW": "210.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781801059312_a_576x.png?v=1716431499"
+            },
+            {
+              "ISBN": "9781801059336",
+              "TITLE": "EXPLORER BOOK + MODEL KIT: MY INCREDIBLE RAINFOREST EXPEDITION",
+              "Normal": "",
+              "Harga BBW": "210.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781801059336_a_576x.png?v=1716431872"
+            },
+            {
+              "ISBN": "9788854412644",
+              "TITLE": "WHERE IS MY UNICORN ?",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://m.media-amazon.com/images/I/514B5QaszhL._AC_UF1000,1000_QL80_.jpg"
             }
           ]
         },
         {
-          "subCategoryName": "C Early Readers",
+          "subCategoryName": "BOARD BOOK",
           "books": [
             {
-              "ISBN": "9782345678901",
-              "TITLE": "Green Eggs and Ham",
-              "Normal": "40.000",
-              "Harga BBW": "35.000",
-              "COVER_URL": "https://m.media-amazon.com/images/I/71e4ln93HOL._SY466_.jpg"
+              "ISBN": "9781783939190",
+              "TITLE": "BABY TOWN: WILD ANIMALS",
+              "Normal": "",
+              "Harga BBW": "45.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781783939190_1_1100x.jpg?v=1687489992"
+            },
+            {
+              "ISBN": "9780857266156",
+              "TITLE": "STORIES OF JESUS MINI LIBRARY",
+              "Normal": "",
+              "Harga BBW": "45.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9780857266156_b_576x.png?v=1722831658"
+            },
+            {
+              "ISBN": "9781783738861",
+              "TITLE": "BOOK IN A BOOK: WHERE DO I LIVE",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://m.media-amazon.com/images/I/81bLKA6FP7L._AC_UF1000,1000_QL80_.jpg"
+            },
+            {
+              "ISBN": "9781848578579",
+              "TITLE": "BABY LOOK - BABY SHINE",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781848578579_1_750x.jpg?v=1648788629"
+            },
+            {
+              "ISBN": "9781642690026",
+              "TITLE": "ACTIVE MINDS LIFT-A-FLAP: COUNTING",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781642690026_a_750x.png?v=1705631163"
+            },
+            {
+              "ISBN": "9780545451703",
+              "TITLE": "SUPER CHICKEN!",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9780545451703_a_750x.png?v=1690191651"
+            },
+            {
+              "ISBN": "9781783738830",
+              "TITLE": "BOOK IN A BOOK: ANIMAL BABIES!",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781783738830_1_368685c2-b787-42fa-8af4-df6b5b614adb_1100x.jpg?v=1648787618"
+            },
+            {
+              "ISBN": "9781786907202",
+              "TITLE": "SMALL MULTIPLE FLAPS - COUNTING BOOK",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781786907202_001-page1_1100x.jpg?v=1648788070"
+            },
+            {
+              "ISBN": "9781786904898",
+              "TITLE": "OUT AND ABOUT!",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781786904898_1_361c323e-6264-4297-9874-34fdab418e13_1100x.jpg?v=1648786715"
+            },
+            {
+              "ISBN": "9781912738755",
+              "TITLE": "CLEVER EMOTIONS: I'M SO HAPPY",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781912738755_001-page1_1100x.jpg?v=1649920218"
+            },
+            {
+              "ISBN": "9781783738854",
+              "TITLE": "BOOK IN A BOOK: WHERE SHOULD I BE?",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781783738854_1_750x.jpg?v=1648787607"
+            },
+            {
+              "ISBN": "9781786907219",
+              "TITLE": "SMALL MULTIPLE FLAPS BOOKS - FIRST WORDS",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/lift-the-flap-book-first-words-9781786907219-28414957813938_576x.jpg?v=1648787208"
+            },
+            {
+              "ISBN": "9781783730261",
+              "TITLE": "SHAKE 'N' SWIM - ANIMALS THAT LOVE",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781783730261_a_576x.png?v=1690277082"
+            },
+            {
+              "ISBN": "9781912738137",
+              "TITLE": "HAPPY HANDLES - MILLIE MOUSE",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781912738137_a_576x.png?v=1709091421"
+            },
+            {
+              "ISBN": "9781912738151",
+              "TITLE": "HAPPY HANDLES - CHLOE CAT GOES TO TOWN",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781912738151_a_576x.png?v=1722851385"
+            },
+            {
+              "ISBN": "9781912738144",
+              "TITLE": "HAPPY HANDLES - FRANKIE FISH",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781912738144_FRONT_5b45f5dc-6e0c-44e4-b3bb-494dccbba25e_1100x.jpg?v=1648787064"
+            },
+            {
+              "ISBN": "9781912738762",
+              "TITLE": "CLEVER EMOTIONS: I'M SO SAD",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781912738762_a_576x.png?v=1722831321"
+            },
+            {
+              "ISBN": "9781783939244",
+              "TITLE": "BABY TOWN: NOISY FARM",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781783939244_1_750x.jpg?v=1649905471"
+            },
+            {
+              "ISBN": "9781783738847",
+              "TITLE": "BOOK IN A BOOK: OPPOSITES!",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781783738847_a_750x.png?v=1690278748"
+            },
+            {
+              "ISBN": "9781848576704",
+              "TITLE": "BABY LOOK - BABY BOUNCE",
+              "Normal": "",
+              "Harga BBW": "55.000",
+              "COVER_URL": "https://ph.bbwbooks.com/cdn/shop/products/9781848576704_1_107d0da2-4ed4-4f25-a738-d710e3a695bc_500x.jpg?v=1625389268"
+            },
+            {
+              "ISBN": "9781788815277",
+              "TITLE": "JELLY BEAR BOARD BOOK: I CAN SEE COLOURS",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781788815277_1_f7b5d6f1-afb2-4377-8414-2c0c4292a7ce_1100x.jpg?v=1648788114"
+            },
+            {
+              "ISBN": "9781848579309",
+              "TITLE": "EARLY LEARNERS: NUMBERS",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781848579309_1_ecf636bd-1413-424b-b011-a125aecbeb7e_1100x.jpg?v=1648788075"
+            },
+            {
+              "ISBN": "9781784682101",
+              "TITLE": "HAPPY BABY - WILD FAMILIES",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781784682101_001-page1_1100x.jpg?v=1648787170"
+            },
+            {
+              "ISBN": "9781784681951",
+              "TITLE": "BIG AND SMALL - MONSTERS",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781786906991_a_750x.png?v=1700710130"
+            },
+            {
+              "ISBN": "9781788815307",
+              "TITLE": "JELLY BEAR BOARD BOOK: BUSY DAY",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781788815307_1-fotor-20230706141037_1100x.jpg?v=1688623858"
+            },
+            {
+              "ISBN": "9781848579293",
+              "TITLE": "EARLY LEARNERS: OPPOSITES",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781848579293_a_576x.png?v=1700709636"
+            },
+            {
+              "ISBN": "9781784682095",
+              "TITLE": "HAPPY BABY - FARM FAMILIES",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781784682095_1_1100x.jpg?v=1648787167"
+            },
+            {
+              "ISBN": "9781848579668",
+              "TITLE": "LITTLE SNAPPERS PEEP THROUGH: JUNGLE",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781848579668_1_454d99e9-22e2-422f-99b3-1dd3e7e404d8_750x.jpg?v=1648788080"
+            },
+            {
+              "ISBN": "9781784681869",
+              "TITLE": "WHAT AM I? : FARM !",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781784681869-1_d747a761-af4d-49f0-b7c1-f0b27097e002_1100x.jpg?v=1648787036"
+            },
+            {
+              "ISBN": "9781784681074",
+              "TITLE": "IN & OUT BOOKS: SHAPES",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781784681074_1_750x.jpg?v=1648787786"
+            },
+            {
+              "ISBN": "9781788815314",
+              "TITLE": "JELLY BEAR: HELLO HELLO OF WE GO",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781788815314_1_750x.jpg?v=1648788105"
+            },
+            {
+              "ISBN": "9781848579279",
+              "TITLE": "EARLY LEARNERS: FIRST WORDS",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781848579279_a_576x.png?v=1700708751"
+            },
+            {
+              "ISBN": "9781789059908",
+              "TITLE": "WHERE'S MY MUMMY? ON THE FARM",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781789059908_a_750x.png?v=1700705807"
+            },
+            {
+              "ISBN": "9781784680053",
+              "TITLE": "PULL OUT AND PLAY: FARM: NO. 2",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781784680053_1_a61e8d6f-119d-4550-bf33-e0955b062c45_1100x.jpg?v=1648786780"
+            },
+            {
+              "ISBN": "9781509820559",
+              "TITLE": "ONE WHITE RABBIT - A COUNTING BOOK",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781509820559_1_1100x.jpg?v=1648787819"
+            },
+            {
+              "ISBN": "9781848695801",
+              "TITLE": "MY LITTLE WORLD : MOO , A NOISY FARMYARD TALE",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781848695801-us_288x.jpg?v=1670319631"
+            },
+            {
+              "ISBN": "9781848579613",
+              "TITLE": "MY TEN TINY SHINY STARS",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781848579613_1_1c373e8c-3c34-4ba5-bfab-f9a531e808a8_1100x.jpg?v=1648787513"
+            },
+            {
+              "ISBN": "9781788815253",
+              "TITLE": "TWINKLE TWINLE LITTLE STAR",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781788815253_001-page1_1100x.jpg?v=1648787506"
+            },
+            {
+              "ISBN": "9781789583717",
+              "TITLE": "TOUCH, FEEL, EXPLORE: ONE AND TWO",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781789583717_1_750x.jpg?v=1648792970"
+            },
+            {
+              "ISBN": "9781848579637",
+              "TITLE": "MY TEN TINY CARS",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781848579637_1_1100x.jpg?v=1648787504"
+            },
+            {
+              "ISBN": "9781784681852",
+              "TITLE": "WHAT AM I? : ANIMALS !",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781784681852_a_576x.png?v=1700711051"
+            },
+            {
+              "ISBN": "9781787721272",
+              "TITLE": "CONCENTRIC BOOK: NOISES",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781787721272_1_c2ef5fa9-fd98-4085-8022-1bb7a343493e_1100x.jpg?v=1648787610"
+            },
+            {
+              "ISBN": "9781848691612",
+              "TITLE": "BIG FISH, LITTLE FISH (MY LITTLE WORLD)",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/big-fish-little-fish-9781848691612-22848946045106_750x.jpg?v=1648787025"
+            },
+            {
+              "ISBN": "9781787720084",
+              "TITLE": "PEEKABOO CLOTH FLAPS: FARM",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781787720084_001-page1_1100x.jpg?v=1648787611"
+            },
+            {
+              "ISBN": "9781788814683",
+              "TITLE": "UNICORN: A MAGICAL BOOK OF COLOURS",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781788814683_001-page1_9a1d9213-bbe2-4e16-970a-7077900aecc8_1100x.jpg?v=1648787479"
+            },
+            {
+              "ISBN": "9781848958135",
+              "TITLE": "HOOT: A HOLE-SOME BOOK OF COUNTING",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781848958135_1_1100x.jpg?v=1648786934"
+            },
+            {
+              "ISBN": "9781848579675",
+              "TITLE": "LITTLE SNAPPERS PEEP THROUGH: FOREST",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781848579675_1_9d77d76a-c499-40c2-8826-5c1b1bd306e8-fotor-20230706173442_1100x.jpg?v=1688636098"
+            },
+            {
+              "ISBN": "9781788814379",
+              "TITLE": "NOW I AM ONE",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781788814379_1_5a9d44dc-9950-4a4c-b79d-f0d4835586e8_1100x.jpg?v=1648786465"
+            },
+            {
+              "ISBN": "9781912738199",
+              "TITLE": "COUNT WITH ME - 10 PLAYFUL PRINCESSES",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/10-playful-princesses-9781912738199-28066808725682_1100x.jpg?v=1648786511"
+            },
+            {
+              "ISBN": "9781454922308",
+              "TITLE": "MR. MONKEY'S NUMBERS: A FUN LIFT-THE-FLAP BOOK",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781454922308_001-page1_1100x.jpg?v=1648787742"
+            },
+            {
+              "ISBN": "9781784680046",
+              "TITLE": "PULL OUT AND PLAY: ANIMALS: NO. 1",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781784680046_1_1100x.jpg?v=1648786783"
+            },
+            {
+              "ISBN": "9781848578968",
+              "TITLE": "A LITTLE LOVE",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781848578968_1_1100x.jpg?v=1648787707"
+            },
+            {
+              "ISBN": "9781787720008",
+              "TITLE": "I DON'T SLEEP IN A TREE",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781787720008_1_2d562ce3-6e32-469e-9e5a-1a7e67eb4022_1100x.jpg?v=1648787207"
+            },
+            {
+              "ISBN": "9781787720145",
+              "TITLE": "MY FIRST ANIMALS",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781787720145_1_750x.jpg?v=1648786715"
+            },
+            {
+              "ISBN": "9781848576711",
+              "TITLE": "BABY LOOK - BABY ROAR",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781848576711_1_1100x.jpg?v=1648786507"
+            },
+            {
+              "ISBN": "9781784681067",
+              "TITLE": "IN & OUT BOOKS: NUMBERS",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781784681067_a_576x.png?v=1700711208"
+            },
+            {
+              "ISBN": "9781783738120",
+              "TITLE": "IS THAT MY TAIL? IN THE HOUSE",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781783738120_2_c592c17c-07fc-4e1b-9bf0-719a83eb7d04_1100x.jpg?v=1648786997"
+            },
+            {
+              "ISBN": "9781912738168",
+              "TITLE": "COUNT WITH ME-10 PESKY PIRATES",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/10-pesky-pirates-9781912738168-28066806104242_1100x.jpg?v=1648786516"
+            },
+            {
+              "ISBN": "9781788815291",
+              "TITLE": "JELLY BEAR: I KNOW MY ALPHABET",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781788815291_1_0026a0eb-f7b9-4e57-a7b7-d253ffff4de2_1100x.jpg?v=1648788112"
+            },
+            {
+              "ISBN": "9781848579286",
+              "TITLE": "EARLY LEARNERS: COLOURS",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781848579286_a_576x.png?v=1699585649"
+            },
+            {
+              "ISBN": "9781784681937",
+              "TITLE": "BIG AND SMALL - VEHICLES",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781784681937_1_1100x.jpg?v=1648787070"
+            },
+            {
+              "ISBN": "9788854412712",
+              "TITLE": "WHERE ARE MY PUPPIES",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9788854412712_a_576x.png?v=1690256915"
+            },
+            {
+              "ISBN": "9781848579620",
+              "TITLE": "MY TEN TINY: FARM FRIENDS",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781848579620_001-page1_1100x.jpg?v=1648787518"
+            },
+            {
+              "ISBN": "9781848579606",
+              "TITLE": "MY TEN TINY CATERPILLARS",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781848579606_1_218f4897-7845-4266-baac-f106709a6072_1100x.jpg?v=1648791936"
+            },
+            {
+              "ISBN": "9781788815284",
+              "TITLE": "JELLY BEAR: I CAN COUNT ONE TWO THREE",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781788815284_1_e20b8a99-3a55-411e-9bc1-837da401a2aa_1100x.jpg?v=1704681184"
+            },
+            {
+              "ISBN": "9781784682125",
+              "TITLE": "HAPPY BABY - PET FAMILIES",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781784682125_001-page1_58bd85d6-ab45-4abb-9b52-1228e0d63daf_1100x.jpg?v=1648787160"
+            },
+            {
+              "ISBN": "9781787721319",
+              "TITLE": "UNDER THE SEA: LITTLE TO LARGE",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781787721319_001-page1_1100x.jpg?v=1648788373"
+            },
+            {
+              "ISBN": "9781789059892",
+              "TITLE": "WHERE'S MY MUMMY ? IN THE JUNGLE",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781789059892_1_adaab5dc-53c4-49f1-8000-cfd338821f94_1100x.jpg?v=1648787710"
+            },
+            {
+              "ISBN": "9781787721326",
+              "TITLE": "WILD ANIMALS: LITTLE TO LARGE",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781787721326_1_750x.jpg?v=1648787714"
+            },
+            {
+              "ISBN": "9781784681876",
+              "TITLE": "WHAT AM I? MY YEAR",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781784681876_a_750x.png?v=1700707973"
+            },
+            {
+              "ISBN": "9788854414112",
+              "TITLE": "WHO'S AT THE WINDOW",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9788854414112_a_750x.png?v=1700709534"
+            },
+            {
+              "ISBN": "9781787720015",
+              "TITLE": "COMEDY COGS: I DON'T EAT WRIGGLY WORMS",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781787720015_1_1100x.jpg?v=1648787712"
+            },
+            {
+              "ISBN": "9781784680060",
+              "TITLE": "PULL OUT AND PLAY: NUMBERS: NO. 3",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781784680060_1_1100x.jpg?v=1648786777"
+            },
+            {
+              "ISBN": "9781788815260",
+              "TITLE": "JELLY BEAR: I CAN SPOT SHAPES",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781788815260_1_1100x.jpg?v=1648788116"
+            },
+            {
+              "ISBN": "9781784681081",
+              "TITLE": "IN & OUT BOOKS: COLOURS",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781784681081_2_750x.jpg?v=1648787793"
+            },
+            {
+              "ISBN": "9781912738182",
+              "TITLE": "COUNT WITH ME - 10 MAGICAL MERMAIDS",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781912738182_001-page3_1500x.jpg?v=1699590229"
+            },
+            {
+              "ISBN": "9781783738106",
+              "TITLE": "IS THAT MY TAIL? ON THE FARM",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781783738106_1_4422b1f4-b7a2-4084-b453-d7ccdd205ce7_1500x.jpg?v=1648786996"
+            },
+            {
+              "ISBN": "9781788106801",
+              "TITLE": "MY PETS WORLD AND ME",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://media.s-bol.com/BrNmE0oYrO4Y/902x1200.jpg"
+            },
+            {
+              "ISBN": "9781784681944",
+              "TITLE": "BIG AND SMALL - SAFARI",
+              "Normal": "",
+              "Harga BBW": "70.000",
+              "COVER_URL": "https://m.media-amazon.com/images/I/413gCm6xv8L._AC_UF1000,1000_QL80_.jpg"
+            },
+            {
+              "ISBN": "9781909090040",
+              "TITLE": "MY FIRST RHYMES",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781909090040_a_576x.png?v=1699587736"
+            },
+            {
+              "ISBN": "9781786906991",
+              "TITLE": "PULL-OUT JIGSAW BOOK - FARM",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781786906991_a_750x.png?v=1700710130"
+            },
+            {
+              "ISBN": "9781912738458",
+              "TITLE": "READY STEADY GO: ON THE WATER",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781912738458_001-page1_1100x.jpg?v=1648787443"
+            },
+            {
+              "ISBN": "9781786905499",
+              "TITLE": "TRACE AND TRACK: ANIMALS",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/animal-trace-the-track-book-9781786905499-23643016888498_1100x.jpg?v=1648787240"
+            },
+            {
+              "ISBN": "9788854414099",
+              "TITLE": "TOPSY TURVY : MONSTERS",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9788854414099_a_576x.png?v=1700708372"
+            },
+            {
+              "ISBN": "9789463336291",
+              "TITLE": "HEY WHERE ARE YOU GOING - MONKEY",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9789463336291_1_7ebae6f8-063a-465c-a665-7d285d4f94c6_1100x.jpg?v=1648788409"
+            },
+            {
+              "ISBN": "9781848579149",
+              "TITLE": "PEEK INSIDE: ANIMALS",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781848579149_1_1100x.jpg?v=1648787516"
+            },
+            {
+              "ISBN": "9781786904188",
+              "TITLE": "CUT OUT BOARD BOOKS - INSIDE OUTSIDE",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781786904188_1_1100x.jpg?v=1648786716"
+            },
+            {
+              "ISBN": "9780603574498",
+              "TITLE": "THOMAS & FRIENDS 123 COUNTING FUN",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9780603574498_1_ec32f71a-ec0c-4a09-9de3-9d765e81b4bb_1100x.jpg?v=1648785684"
+            },
+            {
+              "ISBN": "9781529054132",
+              "TITLE": "THE MOOMINS HAVE FUN! A PUSH, PULL AND SLIDE BOOK",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781529054132_a_0ff57eb6-b7a5-43d8-b065-877ffd0fc3a2_750x.png?v=1700616764"
+            },
+            {
+              "ISBN": "9781838991159",
+              "TITLE": "DOGGY DAVE COLOURFUL DAY",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/51aCtI72N7L_288x.jpg?v=1686120518"
+            },
+            {
+              "ISBN": "9781529016901",
+              "TITLE": "CAMPBELL FIRST STORIES: WIND IN THE WILLOWS",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781529016901_a_58ded6a0-d1e2-4532-957f-c3b5b5f4fe3d_750x.png?v=1692623487"
+            },
+            {
+              "ISBN": "9781838910266",
+              "TITLE": "123 OF THANKFULNESS",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781838910266_a_793a1a5f-9772-43d6-9e77-2974a41794d2_576x.png?v=1700811259"
+            },
+            {
+              "ISBN": "9781838914431",
+              "TITLE": "123 OF KINDNESS",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781838914431_a_1_750x.png?v=1700811180"
+            },
+            {
+              "ISBN": "9781786904195",
+              "TITLE": "CUT OUT BOARD BOOKS - SHAPES & SIZES",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781786904195_1_1100x.jpg?v=1648786722"
+            },
+            {
+              "ISBN": "9781848579910",
+              "TITLE": "ABC OF KINDNESS",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781848579910_1_1100x.jpg?v=1648787539"
+            },
+            {
+              "ISBN": "9781838913601",
+              "TITLE": "FRIENDSHIP IS FOREVER!",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/81BIELEJZqL._SL1500_750x.png?v=1700809132"
+            },
+            {
+              "ISBN": "9781786904171",
+              "TITLE": "CUT OUT BOARD BOOKS - 123 COUNTING",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781786904171_1_0097a50d-7882-46db-8ae7-dcb85d619bb4_1100x.jpg?v=1648786722"
+            },
+            {
+              "ISBN": "9781788102537",
+              "TITLE": "MAKE YOUR OWN: FARM",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781788102537_1_750x.jpg?v=1648787509"
+            },
+            {
+              "ISBN": "9781912738441",
+              "TITLE": "READY STEADY GO: IT'S AN EMERGENCY",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781912738441-1_e50b3570-2179-443e-a06a-b8d7d442e98d_1100x.jpg?v=1648787436"
+            },
+            {
+              "ISBN": "9781786903198",
+              "TITLE": "THE BIG FUN BOOK OF FIRST WORDS",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781786903198_001-page1_1100x.jpg?v=1648787307"
+            },
+            {
+              "ISBN": "9781838991081",
+              "TITLE": "DOGGY DAVE FUN WITH WORDS",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/41kSGBM2U8L_288x.jpg?v=1686120595"
+            },
+            {
+              "ISBN": "9781786907028",
+              "TITLE": "PULL-OUT JIGSAW BOOK - OCEAN FRIENDS",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781786907028_001-page1_1100x.jpg?v=1648788111"
+            },
+            {
+              "ISBN": "9781786905475",
+              "TITLE": "TRACK AND TRACE: AROUND THE TOWN",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781786905475_1_cedd4afc-052d-4102-96c2-e1e3a6c4815a_1100x.jpg?v=1648787096"
+            },
+            {
+              "ISBN": "9781787721265",
+              "TITLE": "EMERGENCY: RESCUE VEHICLES SAVE THE DAY!",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781787721265_001-page1_1100x.jpg?v=1648787504"
+            },
+            {
+              "ISBN": "9781912738434",
+              "TITLE": "READY STEADY GO: IN THE SKY",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781912738434-1_1100x.jpg?v=1648787401"
+            },
+            {
+              "ISBN": "9781788109482",
+              "TITLE": "IN THE JUNGLE",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781788109482_FRONT_02fa5f70-fe56-41a4-af2d-0ffe5bc80bc2_1100x.jpg?v=1648787198"
+            },
+            {
+              "ISBN": "9781838910006",
+              "TITLE": "PEEK INSIDE: NIGHT TIME",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781838910006_a_576x.png?v=1700709327"
+            },
+            {
+              "ISBN": "9781909090026",
+              "TITLE": "MY FIRST ALPHABET: NO. 1",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781909090026_1_1100x.jpg?v=1648787063"
+            },
+            {
+              "ISBN": "9788854414105",
+              "TITLE": "THE RETURN OF TOPSY TURVY MONSTER",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9788854414105_a_576x.png?v=1700707251"
+            },
+            {
+              "ISBN": "9781786907004",
+              "TITLE": "PULL-OUT JIGSAW BOOK - FOREST FRIENDS",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781786907004_a_750x.png?v=1700709437"
+            },
+            {
+              "ISBN": "9781786907011",
+              "TITLE": "GARDEN FRIENDS - MAKE AND PLAY JIGSAW BOOK",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781786907011_a_576x.png?v=1700710552"
+            },
+            {
+              "ISBN": "9781786905482",
+              "TITLE": "ADVENTURE: TRACE AND TRACK BOOK",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781786905482-A_576x.png?v=1714467285"
+            },
+            {
+              "ISBN": "9781909090033",
+              "TITLE": "MY FIRST NUMBERS: NO. 2",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781909090033_1_76fdbe18-167b-4e88-ae7b-4046f05c7e2f_1100x.jpg?v=1648787075"
+            },
+            {
+              "ISBN": "9781848691216",
+              "TITLE": "MY LITTLE WORLD : RED CAR, BLUE CAR",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781848691216_1_224e1cbe-502b-45b9-ac03-9621eb410c71_1100x.jpg?v=1648786100"
+            },
+            {
+              "ISBN": "9781787721258",
+              "TITLE": "DIGGERS: TRUCKS, DIGGERS AND CRANES ON THE GO!",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://m.media-amazon.com/images/I/81KGhni0pFL._AC_UF1000,1000_QL80_.jpg"
+            },
+            {
+              "ISBN": "9781789059175",
+              "TITLE": "LEARN WITH ME 123",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781789059175-1_1100x.jpg?v=1648787656"
+            },
+            {
+              "ISBN": "9781648335600",
+              "TITLE": "TOUCH AND FEEL WACKY WEDNESDAY IN THE JUNGLE",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781648335600_a_576x.png?v=1705568971"
+            },
+            {
+              "ISBN": "9781499803273",
+              "TITLE": "MY FIRST BOXED SET",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781499803273_a_576x.png?v=1706260819"
+            },
+            {
+              "ISBN": "9781648335525",
+              "TITLE": "TOUCH AND FEEL ITSY BITSY SPIDER",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781648335525_1_1100x.jpg?v=1714363294"
+            },
+            {
+              "ISBN": "9788854041776",
+              "TITLE": "I'M GOING TO EAT YOU - HARDCOVER",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9788854041776_a_750x.png?v=1700710051"
+            },
+            {
+              "ISBN": "9781848578531",
+              "TITLE": "EARLY LEARNERS - 4 BB SET ON BACKING CARD + SW",
+              "Normal": "",
+              "Harga BBW": "105.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781848578531_a_750x.png?v=1706255568"
+            },
+            {
+              "ISBN": "9781912756414",
+              "TITLE": "WHAT CAN YOU SEE: NIGHT TIME",
+              "Normal": "",
+              "Harga BBW": "105.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781912756414_a_576x.png?v=1700810279"
+            },
+            {
+              "ISBN": "9781801042246",
+              "TITLE": "WHAT CAN YOU SEE: IN SPACE?",
+              "Normal": "",
+              "Harga BBW": "105.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781801042246_a_576x.png?v=1700810345"
+            },
+            {
+              "ISBN": "9781801046930",
+              "TITLE": "HOW IT WORKS: HUMAN BODY",
+              "Normal": "",
+              "Harga BBW": "105.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781801046930_a_576x.png?v=1700810465"
+            },
+            {
+              "ISBN": "9781801046954",
+              "TITLE": "HOW IT WORKS: ROCKET",
+              "Normal": "",
+              "Harga BBW": "105.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781801046954_a_750x.png?v=1700811054"
+            },
+            {
+              "ISBN": "9781801046961",
+              "TITLE": "HOW IT WORKS: DIGGER",
+              "Normal": "",
+              "Harga BBW": "105.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781801046961_A_576x.png?v=1700810975"
+            },
+            {
+              "ISBN": "9781788815246",
+              "TITLE": "FINDING FIRST WORDS FARM",
+              "Normal": "",
+              "Harga BBW": "105.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781788815246_001-page1_1100x.jpg?v=1648788041"
+            },
+            {
+              "ISBN": "9788854414594",
+              "TITLE": "LIFT THE FLAP: THE WORLD OF DINOSAURS",
+              "Normal": "",
+              "Harga BBW": "105.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9788854414594_1_1100x.jpg?v=1648788044"
+            },
+            {
+              "ISBN": "9781801046947",
+              "TITLE": "HOW IT WORKS: DINOSAUR",
+              "Normal": "",
+              "Harga BBW": "105.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781801046947_a_750x.png?v=1700810878"
+            },
+            {
+              "ISBN": "9781626867628",
+              "TITLE": "LOOK AT ME!",
+              "Normal": "",
+              "Harga BBW": "105.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781626867628_a_750x.png?v=1714716768"
+            },
+            {
+              "ISBN": "9781951086565",
+              "TITLE": "UNICORNS AND FRIENDS 1 2 3",
+              "Normal": "",
+              "Harga BBW": "105.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781951086565_1_1100x.jpg?v=1704352684"
+            },
+            {
+              "ISBN": "9781788109673",
+              "TITLE": "PRESS-OUT AND PLAY BOARD: MY FARM PLAY SET",
+              "Normal": "",
+              "Harga BBW": "105.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781788109673_a_576x.png?v=1706256861"
+            },
+            {
+              "ISBN": "9781529049923",
+              "TITLE": "MY FIRST LONDON ALPHABET",
+              "Normal": "",
+              "Harga BBW": "115.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781529049923_a_ccc65b5d-909a-48fe-a4ea-35c2af7d84c3_750x.png?v=1692608478"
+            },
+            {
+              "ISBN": "9781784682170",
+              "TITLE": "PLAYTIME ADVENTURE!",
+              "Normal": "",
+              "Harga BBW": "115.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781784682170-1_82aadf7a-286d-4352-a28d-34e8be43900e_1100x.jpg?v=1648787540"
+            },
+            {
+              "ISBN": "9781784682200",
+              "TITLE": "PLAYTIME CONSTRUCTION!",
+              "Normal": "",
+              "Harga BBW": "115.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781784682200_001-page1_1100x.jpg?v=1649906423"
+            },
+            {
+              "ISBN": "9781784682194",
+              "TITLE": "PLAYTIME MARKET!",
+              "Normal": "",
+              "Harga BBW": "115.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781784682194_1_fc5cad3e-fc4a-4a46-a411-234aa11b1aab_750x.jpg?v=1713171725"
+            },
+            {
+              "ISBN": "9781648335587",
+              "TITLE": "TOUCH AND FEEL SILLY SUNDAY",
+              "Normal": "",
+              "Harga BBW": "115.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781648335587_a_576x.png?v=1705568650"
+            },
+            {
+              "ISBN": "9781648335617",
+              "TITLE": "TOUCH AND FEEL GREAT SPACE RACE",
+              "Normal": "",
+              "Harga BBW": "115.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781648335617_a_576x.png?v=1705568256"
+            },
+            {
+              "ISBN": "9791027607044",
+              "TITLE": "ULTIMATE SPOTLIGHT: SAVANNA ANIMALS",
+              "Normal": "",
+              "Harga BBW": "115.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9791027607044_1_1100x.jpg?v=1672332498"
+            },
+            {
+              "ISBN": "9791036313585",
+              "TITLE": "ULTIMATE SPOTLIGHT: TRAINS",
+              "Normal": "",
+              "Harga BBW": "115.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9791036313585_a_576x.png?v=1701335063"
+            },
+            {
+              "ISBN": "9781648335501",
+              "TITLE": "TOUCH AND FEEL FIVE LITTLE MERMAIDS",
+              "Normal": "",
+              "Harga BBW": "115.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781648335501_a_576x.png?v=1705567981"
+            },
+            {
+              "ISBN": "9781523520978",
+              "TITLE": "MY FIRST BRAIN QUEST TWO BOOK SET (COLORS/SHAPES)",
+              "Normal": "",
+              "Harga BBW": "115.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781523520978_a_750x.png?v=1710144180"
+            },
+            {
+              "ISBN": "9781648335518",
+              "TITLE": "TOUCH AND FEEL DINOSAUR CONSTRUCTORS",
+              "Normal": "",
+              "Harga BBW": "115.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781648335518_a_576x.png?v=1705567872"
+            },
+            {
+              "ISBN": "9789463336123",
+              "TITLE": "VALUES AND VIRTUES SERIES 2 (4 SET)",
+              "Normal": "",
+              "Harga BBW": "115.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/values-and-virtues-series-4-books-set-9789463336123-15898004062252_750x.jpg?v=1648787511"
+            },
+            {
+              "ISBN": "9781648333446",
+              "TITLE": "MOTHER GOOSE BEDTIME COLLECTION",
+              "Normal": "",
+              "Harga BBW": "125.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781648333446_1_576x.png?v=1695278827"
+            },
+            {
+              "ISBN": "9781784682217",
+              "TITLE": "HAPPY BABY : LEARNING SET ANIMALS (4 BOOKS)",
+              "Normal": "",
+              "Harga BBW": "125.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781784682217_001-page1_1100x.jpg?v=1648786783"
+            },
+            {
+              "ISBN": "9781648330612",
+              "TITLE": "MY BIG BOOK OF WORDS",
+              "Normal": "",
+              "Harga BBW": "125.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781648330612_3_1100x.jpg?v=1695278865"
+            },
+            {
+              "ISBN": "9781648330520",
+              "TITLE": "MY BIG BOOK OF ANIMALS",
+              "Normal": "",
+              "Harga BBW": "125.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781648330520_1-fotor-20230705122237_576x.png?v=1688530975"
+            },
+            {
+              "ISBN": "9781784682842",
+              "TITLE": "MY FIRST BOOK OF THINGS TO FIND: AT HOME",
+              "Normal": "",
+              "Harga BBW": "140.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781784682842_1_1100x.jpg?v=1701150694"
+            },
+            {
+              "ISBN": "9781784682835",
+              "TITLE": "MY FIRST BOOK OF THINGS TO FIND: ANIMALS",
+              "Normal": "",
+              "Harga BBW": "140.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781784682835_a_750x.png?v=1693900690"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "KOREAN BOOK",
+      "subCategories": [
+        {
+          "subCategoryName": "K Fiction",
+          "books": [
+            {
+              "ISBN": "9781234567890",
+              "TITLE": "The Beauty of Korean Literature",
+              "Normal": "70.000",
+              "Harga BBW": "65.000",
+              "COVER_URL": "https://example.com/korean-book-1.jpg"
+            }
+          ]
+        },
+        {
+          "subCategoryName": "K Non-Fiction",
+          "books": [
+            {
+              "ISBN": "9780987654321",
+              "TITLE": "Korean Culture Explained",
+              "Normal": "80.000",
+              "Harga BBW": "75.000",
+              "COVER_URL": "https://example.com/korean-book-2.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "JUDUL PILIHAN BCA",
+      "subCategories": [
+        {
+          "subCategoryName": "BCA Picks",
+          "books": [
+            {
+              "ISBN": "9788765432109",
+              "TITLE": "BCA Recommended Read",
+              "Normal": "85.000",
+              "Harga BBW": "80.000",
+              "COVER_URL": "https://example.com/bca-book-1.jpg"
             }
           ]
         }
