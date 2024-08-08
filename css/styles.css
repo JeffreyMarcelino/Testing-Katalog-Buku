@@ -262,6 +262,63 @@ button:hover {
     width: 100%;
 }
 
+.skeleton-loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 18rem;
+    height: 360px;
+    margin: 10px;
+}
+
+.skeleton-loader .skeleton-img {
+    width: 100%;
+    height: 60%;
+    background-color: #ddd;
+    border-radius: 4px 4px 0 0;
+}
+
+.skeleton-loader .skeleton-text {
+    width: 80%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.skeleton-loader .skeleton-text.short {
+    width: 50%;
+}
+
+.skeleton-loader .skeleton-text.medium {
+    width: 70%;
+}
+
+.skeleton-loader .skeleton-text.long {
+    width: 90%;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #e0e0e0;
+    }
+    50% {
+        background-color: #f4f4f4;
+    }
+    100% {
+        background-color: #e0e0e0;
+    }
+}
+
+.skeleton-loader .skeleton-img,
+.skeleton-loader .skeleton-text {
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;

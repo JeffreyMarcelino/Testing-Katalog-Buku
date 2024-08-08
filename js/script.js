@@ -85,25 +85,44 @@ document.addEventListener("DOMContentLoaded", function() {
         const end = start + booksPerPage;
         const paginatedBooks = books.slice(start, end);
         const bookCatalog = document.getElementById('book-catalog');
+        
+        // Display skeleton loaders before the books load
         bookCatalog.innerHTML = '';
-    
-        // Display first half of the books
-        paginatedBooks.slice(0, halfBooksPerPage).forEach(book => {
-            const bookItem = createBookItem(book);
-            bookCatalog.appendChild(bookItem);
-        });
-    
-        // Add a spacer
-        const spacer = document.createElement('div');
-        spacer.style.flexBasis = '100%';
-        bookCatalog.appendChild(spacer);
-    
-        // Display second half of the books
-        paginatedBooks.slice(halfBooksPerPage).forEach(book => {
-            const bookItem = createBookItem(book);
-            bookCatalog.appendChild(bookItem);
-        });
+        for (let i = 0; i < booksPerPage; i++) {
+            const skeleton = document.createElement('div');
+            skeleton.className = 'skeleton-loader';
+            skeleton.innerHTML = `
+                <div class="skeleton-img"></div>
+                <div class="skeleton-text medium"></div>
+                <div class="skeleton-text short"></div>
+                <div class="skeleton-text short"></div>
+            `;
+            bookCatalog.appendChild(skeleton);
+        }
+        
+        setTimeout(() => {
+            // Clear skeleton loaders
+            bookCatalog.innerHTML = '';
+            
+            // Display the books
+            paginatedBooks.slice(0, halfBooksPerPage).forEach(book => {
+                const bookItem = createBookItem(book);
+                bookCatalog.appendChild(bookItem);
+            });
+        
+            // Add a spacer
+            const spacer = document.createElement('div');
+            spacer.style.flexBasis = '100%';
+            bookCatalog.appendChild(spacer);
+        
+            // Display second half of the books
+            paginatedBooks.slice(halfBooksPerPage).forEach(book => {
+                const bookItem = createBookItem(book);
+                bookCatalog.appendChild(bookItem);
+            });
+        }, 1000); // Adjust time as needed
     }
+    
     
 
     function createBookItem(book) {
@@ -147,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
             const bbwPriceLabel = document.createElement('span');
             bbwPriceLabel.className = 'price-label';
-            bbwPriceLabel.textContent = 'bbw:';
+            bbwPriceLabel.textContent = 'BBW:';
     
             const bbwPrice = document.createElement('span');
             bbwPrice.className = 'new-price';
