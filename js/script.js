@@ -124,24 +124,21 @@ document.addEventListener("DOMContentLoaded", function() {
         cardBody.className = 'card-body';
         bookItem.appendChild(cardBody);
     
-        // Create and append the title
+        // Create and append the title wrapper and title
+        const titleWrapper = document.createElement('div');
+        titleWrapper.className = 'card-title-wrapper';
         const bookTitle = document.createElement('h5');
         bookTitle.className = 'card-title';
         bookTitle.textContent = book.TITLE;
-        cardBody.appendChild(bookTitle);
+        titleWrapper.appendChild(bookTitle);
+        cardBody.appendChild(titleWrapper);
     
         // Create and append the ISBN
         const bookIsbn = document.createElement('p');
-        bookIsbn.className = 'card-text';
+        bookIsbn.className = 'card-text isbn'; // Add class for styling
         bookIsbn.textContent = `ISBN: ${book.ISBN}`;
         cardBody.appendChild(bookIsbn);
-    
-        // Create and append the normal price
-        const normalPrice = document.createElement('p');
-        normalPrice.className = 'card-text';
-        normalPrice.innerHTML = `Normal: <span class="normal-price">Rp. ${book.Normal}</span>`;
-        cardBody.appendChild(normalPrice);
-    
+
         // Create and append the BBW price if available
         if (book['Harga BBW']) {
             const bbwPriceWrapper = document.createElement('div');
@@ -149,19 +146,26 @@ document.addEventListener("DOMContentLoaded", function() {
     
             const bbwPriceLabel = document.createElement('span');
             bbwPriceLabel.className = 'price-label';
-            bbwPriceLabel.textContent = 'Harga BBW:';
+            bbwPriceLabel.textContent = 'bbw:';
     
             const bbwPrice = document.createElement('span');
             bbwPrice.className = 'new-price';
-            bbwPrice.textContent = `Rp. ${book['Harga BBW']}`;
+            bbwPrice.textContent = `RP. ${book['Harga BBW']}`;
     
             bbwPriceWrapper.appendChild(bbwPriceLabel);
             bbwPriceWrapper.appendChild(bbwPrice);
             cardBody.appendChild(bbwPriceWrapper);
         }
     
+        // Create and append the normal price
+        const normalPrice = document.createElement('p');
+        normalPrice.className = 'card-text normal-price'; // Add class for styling
+        normalPrice.innerHTML = `normal: <span class="normal-price">RP. ${book.Normal}</span>`;
+        cardBody.appendChild(normalPrice);
+
         return bookItem;
     }
+    
     
 
 function getPriceClass(category) {
