@@ -315,7 +315,7 @@ button:hover {
 
 .skeleton-loader .skeleton-img,
 .skeleton-loader .skeleton-text {
-    animation: pulse 1.5s infinite ease-in-out;
+    animation: pulse 1.5s infinite ease-in-out infinite;
 }
 
 

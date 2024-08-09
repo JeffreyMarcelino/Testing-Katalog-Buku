@@ -96,6 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="skeleton-text medium"></div>
                 <div class="skeleton-text short"></div>
                 <div class="skeleton-text short"></div>
+                <div class="skeleton-text short"></div>
             `;
             bookCatalog.appendChild(skeleton);
         }
