@@ -16,11 +16,20 @@ header {
 }
 
 .top-header {
+    display: flex;
+    flex-direction: column; /* Memastikan logo dan judul ditumpuk secara vertikal */
+    align-items: center;
     margin-bottom: 10px;
 }
 
 #logo {
     max-width: 200px;
+}
+
+.logo-event {
+    max-width: 100%; /* Memastikan gambar tidak melebihi lebar kontainer */
+    height: auto; /* Menjaga proporsi gambar */
+    margin: 10px 0; /* Menambahkan jarak atas dan bawah */
 }
 
 input[type="text"] {
@@ -198,7 +207,6 @@ button:hover {
     border-radius: 3px;
     display: inline-block;
     white-space: nowrap;
-    /* font-size: x-large; */
 }
 
 .book-price {
@@ -288,6 +296,46 @@ button:hover {
     width: 90%;
 }
 
+/* Gaya untuk dropdown pada tampilan mobile */
+.mobile-nav {
+    display: none; /* Defaultnya tersembunyi */
+    position: relative;
+}
+
+.mobile-nav-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.mobile-nav-dropdown {
+    display: none; /* Defaultnya tersembunyi */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.mobile-nav-dropdown a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.mobile-nav-dropdown a:hover {
+    background-color: #555;
+}
+
 @keyframes pulse {
     0% {
         background-color: #e0e0e0;
@@ -305,7 +353,40 @@ button:hover {
     animation: pulse 1.5s infinite ease-in-out infinite;
 }
 
+@keyframes loading {
+    0% {
+        background-color: #e0e0e0;
+    }
+    50% {
+        background-color: #f0f0f0;
+    }
+    100% {
+        background-color: #e0e0e0;
+    }
+}
+
+/* Khusus untuk tampilan desktop */
+@media (min-width: 769px) {
+    .book-price .new-price {
+        font-size: x-large;
+    }
+}
+
+/* Khusus untuk tampilan mobile */
 @media (max-width: 768px) {
+    .logo-event {
+        max-width: 90%; /* Lebar maksimum gambar pada tampilan mobile */
+        width: auto; /* Memastikan gambar menyesuaikan dengan lebar maksimum */
+        margin: 10px 0; /* Menambahkan jarak atas dan bawah */
+    }
+    
+    .header-container {
+        display: none; /* Sembunyikan header-container pada tampilan mobile */
+    }
+
+    .mobile-nav {
+        display: block; /* Tampilkan dropdown pada tampilan mobile */
+    }
     header {
         flex-direction: column;
         text-align: center;
@@ -315,6 +396,8 @@ button:hover {
         width: 100%;
         max-width: none;
         margin: 10px 0;
+        padding: 10px; /* Untuk memastikan placeholder tidak terlalu dekat dengan tepi input */
+        text-align: center; /* Menempatkan teks placeholder di tengah secara horizontal */
     }
 
     .header-container {
@@ -333,9 +416,11 @@ button:hover {
     .book-item {
         width: calc(50% - 20px);
     }
-}
 
-@media (max-width: 576px) {
+    .book-price .new-price {
+        font-size: small; /* Mengatur kembali ke ukuran font default */
+    }
+
     .book-catalog {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -412,17 +497,5 @@ button:hover {
 
     .skeleton-text.short {
         width: 40%;
-    }
-}
-
-@keyframes loading {
-    0% {
-        background-color: #e0e0e0;
-    }
-    50% {
-        background-color: #f0f0f0;
-    }
-    100% {
-        background-color: #e0e0e0;
     }
 }

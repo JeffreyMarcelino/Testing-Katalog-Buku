@@ -11,10 +11,26 @@
     <header>
         <div class="top-header">
             <img src="https://static.wixstatic.com/media/d6eb9b_8b1aed6b5b0949c0a3c93de61033ebdc~mv2.png" alt="Logo Katalog Buku" id="logo">
+            <img src="assets/Screenshot 2024-08-12 114147.png" alt="Logo Event" class="logo-event">
             <h1>Book Catalogue</h1>
         </div>
+        <!-- Tambahkan elemen dropdown untuk tampilan mobile -->
+        <nav class="mobile-nav">
+            <a id="mobile-all-button">All</a>
+            <button class="mobile-nav-button" id="mobile-nav-button">List Category</button>
+            <div class="mobile-nav-dropdown" id="mobile-nav-dropdown">
+                <a id="mobile-children-button">Children</a>
+                <a id="mobile-fiction-button">Fiction</a>
+                <a id="mobile-non-fiction-button">Non Fiction</a>
+                <a id="mobile-korean-button">Korean Book</a>
+                <a id="mobile-bca-button">Judul Pilihan BCA</a>
+            </div>
+            <input type="text" id="search-input" placeholder="Find books by title, ISBN, or Category...">
+            <button id="search-button">Search</button>
+        </nav>
+
         <div class="header-container">
-            <button id="all-button">ALL List</button>
+            <button id="all-button">ALL</button>
             <button id="children-button">Children</button>
             <button id="fiction-button">Fiction</button>
             <button id="non-fiction-button">Non Fiction</button>

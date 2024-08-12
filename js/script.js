@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const booksPerPage = 10; // Jumlah buku per halaman
-    const halfBooksPerPage = booksPerPage / 2;
+    const halfBooksPerPage = booksPerPage / 1;
     let currentPage = 1;
     let allBooks = [];
     let filteredBooks = [];
@@ -72,6 +72,49 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('bca-button').addEventListener('click', function() {
         filterByCategory("JUDUL PILIHAN BCA");
     });
+
+    // Tampilan Dropdown Mobile
+    // Dropdown functionality for mobile
+    const mobileNavButton = document.getElementById('mobile-nav-button');
+    const mobileNavDropdown = document.getElementById('mobile-nav-dropdown');
+    
+    mobileNavButton.addEventListener('click', function() {
+        mobileNavDropdown.style.display = mobileNavDropdown.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Handle dropdown category selection
+    document.getElementById('mobile-all-button').addEventListener('click', function() {
+        handleCategorySelection("ALL");
+    });
+    document.getElementById('mobile-children-button').addEventListener('click', function() {
+        handleCategorySelection("CHILDREN");
+    });
+    document.getElementById('mobile-fiction-button').addEventListener('click', function() {
+        handleCategorySelection("FICTION");
+    });
+    document.getElementById('mobile-non-fiction-button').addEventListener('click', function() {
+        handleCategorySelection("NON FICTION");
+    });
+    document.getElementById('mobile-korean-button').addEventListener('click', function() {
+        handleCategorySelection("KOREAN BOOK");
+    });
+    document.getElementById('mobile-bca-button').addEventListener('click', function() {
+        handleCategorySelection("JUDUL PILIHAN BCA");
+    });
+
+    function handleCategorySelection(category) {
+        if (category === "ALL") {
+            document.getElementById('search-input').value = '';
+            filteredBooks = allBooks; // Reset ke semua buku
+        } else {
+            filteredBooks = allBooks.filter(book => book.CATEGORY.startsWith(category));
+        }
+        currentPage = 1; // Reset ke halaman pertama
+        displayBooks(filteredBooks, currentPage);
+        setupPagination(filteredBooks.length, booksPerPage);
+        mobileNavDropdown.style.display = 'none'; // Sembunyikan dropdown setelah memilih kategori
+    }
+    /// Tampilan Dropdown Mobile
 
     function filterByCategory(category) {
         filteredBooks = allBooks.filter(book => book.CATEGORY.startsWith(category));
