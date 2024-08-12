@@ -16,11 +16,11 @@ header {
 }
 
 .top-header {
-    margin-bottom: 10px; /* Jarak antara bagian atas header dengan bagian pencarian */
+    margin-bottom: 10px;
 }
 
 #logo {
-    max-width: 200px; /* Sesuaikan ukuran logo */
+    max-width: 200px;
 }
 
 input[type="text"] {
@@ -60,7 +60,7 @@ button:hover {
     width: 200px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    position: relative; /* Membuat posisi relative untuk memudahkan penataan harga diskon */
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -68,9 +68,9 @@ button:hover {
 
 .book-item img {
     max-width: 100%;
-    height: 360px; /* Sesuaikan tinggi gambar agar semua gambar memiliki tinggi yang sama */
-    object-fit: contain; /* Pastikan gambar di dalam batas tanpa merusak rasio aspek */
-    margin-bottom: 10px; /* Jarak antara gambar dan konten lainnya */
+    height: 360px;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
 .book-item h2 {
@@ -80,7 +80,6 @@ button:hover {
 
 .book-item p {
     font-size: 0.9em;
-    /* color: #333; */
 }
 
 .book-item a {
@@ -101,28 +100,28 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px; /* Atur tinggi sesuai kebutuhan */
+    height: 200px;
     font-size: 1.2em;
     color: #555;
 }
 
 .header-container {
     display: flex;
-    align-items: center; /* Memastikan elemen berada pada garis vertikal yang sama */
+    align-items: center;
 }
 
 #search-input {
-    flex-grow: 1; /* Mengambil ruang tersisa */
-    margin: 0px 20px; /* Jarak antara input dan tombol Cari */
+    flex-grow: 1;
+    margin: 0px 20px;
     width: 320px;
 }
 
 #home-button {
-    margin-left: 10px; /* Jarak antara tombol Cari dan tombol Home */
+    margin-left: 10px;
 }
 
 .dropdown {
-    margin-left: 10px; /* Jarak antara tombol Home dan tombol Dropdown */
+    margin-left: 10px;
 }
 
 .card {
@@ -132,76 +131,74 @@ button:hover {
 
 .card-img-top {
     padding-top: 50px;
-    width: 100%; /* Pastikan gambar sesuai dengan lebar card */
-    height: 360px; /* Sesuaikan tinggi gambar agar semua gambar memiliki tinggi yang sama */
-    object-fit: contain; /* Pertahankan ukuran gambar asli tanpa pemangkasan */
+    width: 100%;
+    height: 360px;
+    object-fit: contain;
 }
 
-/* Tambahkan styling untuk harga baru berdasarkan kategori */
 .new-price-children {
-    background-color: #CF1A21; /* Warna untuk Children */
+    background-color: #CF1A21;
     color: #ffffff;
 }
 
 .new-price-fiction {
-    background-color: #F8E52D; /* Warna untuk Fiction */
+    background-color: #F8E52D;
     color: #000000;
 }
 
 .new-price-non-fiction {
-    background-color: #92b6f0; /* Warna untuk Non Fiction */
+    background-color: #92b6f0;
     color: #000000;
 }
 
 .new-price-korean {
-    background-color: #FEA6D3; /* Warna untuk Korean Book */
+    background-color: #FEA6D3;
     color: #000000;
 }
 
 .new-price-bca {
-    background-color: #0061AF; /* Warna latar belakang untuk Judul Pilihan BCA */
-    color: #ffffff; 
+    background-color: #0061AF;
+    color: #ffffff;
 }
 
-/* Update the background color for the book-price based on category */
 .book-price.new-price-children {
-    background-color: #CF1A21; /* Warna untuk Children */
+    background-color: #CF1A21;
     color: #ffffff;
 }
 
 .book-price.new-price-fiction {
-    background-color: #F8E52D; /* Warna untuk Fiction */
+    background-color: #F8E52D;
     color: #000000;
 }
 
 .book-price.new-price-non-fiction {
-    background-color: #92b6f0; /* Warna untuk Non Fiction */
+    background-color: #92b6f0;
     color: #000000;
 }
 
 .book-price.new-price-korean {
-    background-color: #FEA6D3; /* Warna untuk Korean Book */
+    background-color: #FEA6D3;
     color: #000000;
 }
 
 .book-price.new-price-bca {
-    background-color: #0061AF; /* Warna latar belakang untuk Judul Pilihan BCA */
-    color: #ffffff; 
+    background-color: #0061AF;
+    color: #ffffff;
 }
 
 .book-price .price-label {
     margin: 0 5px;
     display: inline-block;
-    white-space: nowrap; /* Mencegah teks melipat ke baris baru */
+    white-space: nowrap;
 }
 
 .book-price .new-price {
     margin-left: 5px;
-    padding: 2px 5px; /* Sesuaikan padding untuk tampilan yang lebih baik */
+    padding: 2px 5px;
     border-radius: 3px;
     display: inline-block;
-    white-space: nowrap; /* Mencegah teks melipat ke baris baru */
-    font-size: x-large;
+    white-space: nowrap;
+    /* font-size: x-large; */
 }
 
 .book-price {
@@ -209,54 +206,44 @@ button:hover {
     font-weight: bold;
     border-radius: 3px;
     display: flex;
-    align-items: center; /* Menyelaraskan elemen secara vertikal */
+    align-items: center;
     justify-content: center;
     width: 100%;
 }
 
-/* .normal-price {
-    margin-left: 5px;
-    font-size: 1em;
-    color: #d9534f;
-    font-weight: bold;
-    text-decoration: line-through;
-} */
-
 .card-body {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Pastikan elemen lain tetap di kiri */
+    align-items: flex-start;
     padding: 10px;
 }
 
 .card-title-wrapper {
     display: flex;
-    justify-content: center; /* Tengah-tengah secara horizontal */
-    width: 100%; /* Memastikan wrapper menggunakan lebar penuh */
+    justify-content: center;
+    width: 100%;
 }
 
 .card-title {
-    margin: 0; /* Menghapus margin default */
-    text-align: center; /* Menyelaraskan teks di tengah */
+    margin: 0;
+    text-align: center;
 }
 
 .card-text {
-    text-align: left; /* Menjaga teks di kiri */
+    text-align: left;
 }
 
 .card-text.isbn {
-    margin-top: 10px; /* Margin atas untuk ISBN */
-    margin-bottom: 10px; /* Margin bawah untuk ISBN */
-    /* margin-left: 0 5px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
 .card-text.sub-category {
-    margin-top: 10px; /* Margin atas untuk ISBN */
-    margin-bottom: 10px; /* Margin bawah untuk ISBN */
-    /* margin-left: 5px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -318,7 +305,6 @@ button:hover {
     animation: pulse 1.5s infinite ease-in-out infinite;
 }
 
-
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -345,12 +331,98 @@ button:hover {
     }
 
     .book-item {
-        width: calc(50% - 20px); /* Adjust width to fit two items per row */
+        width: calc(50% - 20px);
     }
 }
 
 @media (max-width: 576px) {
+    .book-catalog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
     .book-item {
-        width: 100%; /* Adjust width to full width for one item per row */
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 100%; /* Mengatur card untuk mengambil seluruh lebar layar */
+        max-width: 10rem; /* Lebar maksimum card */
+        margin: 8px auto; /* Margin atas dan bawah dengan jarak yang lebih kecil */
+        padding: 0.5rem; /* Mengurangi padding dalam card */
+    }
+
+    .card img {
+        width: 100%; /* Memastikan gambar memenuhi lebar card */
+        height: auto; /* Menjaga proporsi gambar */
+    }
+
+    .card-body {
+        padding: 0.5rem; /* Mengurangi padding dalam card-body */
+    }
+
+    .card-title {
+        font-size: 0.75rem; /* Menyesuaikan ukuran font title */
+    }
+
+    .card-text {
+        font-size: 0.625rem; /* Menyesuaikan ukuran font teks */
+    }
+
+    .new-price {
+        font-size: 0.75rem; /* Menyesuaikan ukuran font untuk label harga */
+    }
+
+    .skeleton-loader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+        background: #e0e0e0;
+        border-radius: 4px;
+        width: 100px;
+        height: 150px;
+        position: relative;
+    }
+
+    .skeleton-img {
+        width: 100%;
+        height: 60px;
+        background: #ccc;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        animation: loading 1.5s infinite;
+    }
+
+    .skeleton-text {
+        width: 80%;
+        height: 10px;
+        background: #ccc;
+        margin-bottom: 8px;
+        border-radius: 4px;
+        animation: loading 1.5s infinite;
+    }
+
+    .skeleton-text.medium {
+        width: 60%;
+    }
+
+    .skeleton-text.short {
+        width: 40%;
+    }
+}
+
+@keyframes loading {
+    0% {
+        background-color: #e0e0e0;
+    }
+    50% {
+        background-color: #f0f0f0;
+    }
+    100% {
+        background-color: #e0e0e0;
     }
 }
