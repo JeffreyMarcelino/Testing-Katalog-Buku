@@ -74,6 +74,22 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Tampilan Dropdown Mobile
+
+    document.getElementById('mobile-search-button').addEventListener('click', function() {
+        const searchTerm = document.getElementById('mobile-search-input').value.toLowerCase();
+        const bookCatalog = document.getElementById('book-catalog');
+        bookCatalog.innerHTML = '<div class="loading">Loading...</div>';
+        setTimeout(() => {
+            filteredBooks = filterBooks(allBooks, searchTerm);
+            if (filteredBooks.length === 0) {
+                bookCatalog.innerHTML = '<div class="loading">No books found.</div>';
+            } else {
+                currentPage = 1; // Reset ke halaman pertama saat pencarian
+                displayBooks(filteredBooks, currentPage);
+                setupPagination(filteredBooks.length, booksPerPage);
+            }
+        }, 1000);
+    });
     // Dropdown functionality for mobile
     const mobileNavButton = document.getElementById('mobile-nav-button');
     const mobileNavDropdown = document.getElementById('mobile-nav-dropdown');
@@ -104,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function handleCategorySelection(category) {
         if (category === "ALL") {
-            document.getElementById('search-input').value = '';
+            document.getElementById('mobile-search-input').value = '';
             filteredBooks = allBooks; // Reset ke semua buku
         } else {
             filteredBooks = allBooks.filter(book => book.CATEGORY.startsWith(category));

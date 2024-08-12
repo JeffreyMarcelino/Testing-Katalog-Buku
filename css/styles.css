@@ -138,13 +138,6 @@ button:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.card-img-top {
-    padding-top: 50px;
-    width: 100%;
-    height: 360px;
-    object-fit: contain;
-}
-
 .new-price-children {
     background-color: #CF1A21;
     color: #ffffff;
@@ -370,16 +363,30 @@ button:hover {
     .book-price .new-price {
         font-size: x-large;
     }
+
+    .card-img-top {
+        padding-top: 50px;
+        width: 100%;
+        height: 360px;
+        object-fit: contain;
+    }
 }
 
 /* Khusus untuk tampilan mobile */
 @media (max-width: 768px) {
+    .card-img-top {
+        padding-top: 30px;
+        width: 100%;
+        height: 360px;
+        object-fit: contain;
+    }
+
     .logo-event {
         max-width: 90%; /* Lebar maksimum gambar pada tampilan mobile */
         width: auto; /* Memastikan gambar menyesuaikan dengan lebar maksimum */
         margin: 10px 0; /* Menambahkan jarak atas dan bawah */
     }
-    
+
     .header-container {
         display: none; /* Sembunyikan header-container pada tampilan mobile */
     }
