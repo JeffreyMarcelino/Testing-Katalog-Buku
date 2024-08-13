@@ -6,6 +6,8 @@ body {
 }
 
 header {
+    background: url(/assets/header\ catalog-02.png) no-repeat center center;
+    background-size: cover;
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -356,6 +358,30 @@ button:hover {
     100% {
         background-color: #e0e0e0;
     }
+}
+
+#all-button {
+    margin: 0 0 0 10px;
+}
+
+#children-button {
+    margin: 0 0 0 10px;
+}
+
+#fiction-button {
+    margin: 0 0 0 10px;
+}
+
+#non-fiction-button {
+    margin: 0 0 0 10px;
+}
+
+#korean-button {
+    margin: 0 0 0 10px;
+}
+
+#bca-button {
+    margin: 0 0 0 10px;
 }
 
 /* Khusus untuk tampilan desktop */
