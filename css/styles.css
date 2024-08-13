@@ -6,9 +6,9 @@ body {
 }
 
 header {
-    background: url(/assets/header\ catalog-02.png) no-repeat center center;
+    background: url(assets/header\ catalog-02.png) no-repeat center center;
     background-size: cover;
-    background-color: #333;
+    /* background-color: #333; */
     color: #fff;
     text-align: center;
     padding: 1em 0;
