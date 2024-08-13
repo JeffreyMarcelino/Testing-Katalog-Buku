@@ -400,6 +400,10 @@ button:hover {
 
 /* Khusus untuk tampilan mobile */
 @media (max-width: 768px) {
+    .book-price .price-label {
+        font-size: small;
+    }
+
     .card-img-top {
         padding-top: 30px;
         width: 100%;
