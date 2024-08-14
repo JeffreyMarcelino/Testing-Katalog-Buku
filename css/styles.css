@@ -8,7 +8,6 @@ body {
 header {
     background: url(../assets/bg1.png) no-repeat center center;
     background-size: cover;
-    /* background-color: #333; */
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -225,11 +224,24 @@ button:hover {
     display: flex;
     justify-content: center;
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .card-title {
     margin: 0;
     text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Jumlah baris yang ditampilkan sebelum dipotong */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-title-wrapper:hover .card-title {
+    white-space: normal;
+    overflow: visible;
+    -webkit-line-clamp: unset; /* Menghapus batasan baris saat dihover */
 }
 
 .card-text {

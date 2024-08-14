@@ -207,18 +207,21 @@ document.addEventListener("DOMContentLoaded", function() {
         // Create and append the title wrapper and title
         const titleWrapper = document.createElement('div');
         titleWrapper.className = 'card-title-wrapper';
+    
+        // Set the title text
         const bookTitle = document.createElement('h5');
         bookTitle.className = 'card-title';
         bookTitle.textContent = book.TITLE;
         titleWrapper.appendChild(bookTitle);
         cardBody.appendChild(titleWrapper);
     
+        // The rest of your code remains unchanged...
         // Create and append the ISBN
         const bookIsbn = document.createElement('p');
         bookIsbn.className = 'card-text isbn'; // Add class for styling
         bookIsbn.textContent = `ISBN: ${book.ISBN}`;
         cardBody.appendChild(bookIsbn);
-
+    
         // Create and append the BBW price if available
         if (book['Harga BBW']) {
             const bbwPriceWrapper = document.createElement('div');
@@ -242,9 +245,10 @@ document.addEventListener("DOMContentLoaded", function() {
         subCategory.className = 'card-text sub-category'; // Add class for styling
         subCategory.innerHTML = `<span class="sub-category-name">${book.subCategoryName}</span>`;
         cardBody.appendChild(subCategory);
-
+    
         return bookItem;
     }
+    
     
     
 
