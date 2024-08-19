@@ -548,3 +548,26 @@ button:hover {
         width: 40%;
     }
 }
+
+@media (max-width: 576px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Ini akan memusatkan konten horizontal (termasuk gambar) */
+        text-align: center; /* Opsional: Ini akan memusatkan teks dalam card */
+    }
+
+    .card .card-img-top {
+        padding-top: 30px;
+        width: 100%;
+        height: 240px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 15px; /* Memberikan sedikit jarak antara gambar dan teks */
+    }
+
+    .card-body {
+        width: 100%; /* Memastikan body card mengambil seluruh lebar */
+    }
+}
