@@ -262,6 +262,7 @@ button:hover {
     display: flex;
     justify-content: center;
     width: 100%;
+    text-align: center;
 }
 
 .skeleton-loader {
@@ -329,6 +330,7 @@ button:hover {
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    margin-top: 10px;
 }
 
 .mobile-nav-dropdown a {

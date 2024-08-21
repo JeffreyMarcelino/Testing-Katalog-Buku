@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
             const bbwPriceLabel = document.createElement('span');
             bbwPriceLabel.className = 'price-label';
-            bbwPriceLabel.textContent = 'BBW:';
+            // bbwPriceLabel.textContent = 'BBW:';
     
             const bbwPrice = document.createElement('span');
             bbwPrice.className = 'new-price';
