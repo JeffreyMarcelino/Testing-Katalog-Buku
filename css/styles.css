@@ -212,13 +212,13 @@ button:hover {
 }
 
 .book-price .price-label {
-    margin: 0 5px;
+    /* margin: 0 5px; */
     display: inline-block;
     white-space: nowrap;
 }
 
 .book-price .new-price {
-    margin-left: 5px;
+    /* margin-left: 5px; */
     padding: 2px 5px;
     border-radius: 3px;
     display: inline-block;
