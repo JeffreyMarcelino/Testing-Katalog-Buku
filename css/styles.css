@@ -23,6 +23,23 @@ header {
     margin-bottom: 10px;
 }
 
+footer {
+    background: url(../assets/FOOTER.png) no-repeat center center;
+    background-size: cover;
+    padding: 2rem 0;
+}
+
+.font-footer {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-size: 2.375em;
+    margin-left: 0.5em;
+}
+
 #logo {
     max-width: 200px;
 }
@@ -53,6 +70,11 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+.btn-klik,
+.btn-klik:hover {
+    background-color: transparent;
 }
 
 .book-catalog {
@@ -579,5 +601,21 @@ button:hover {
 
     .card-body {
         width: 100%; /* Memastikan body card mengambil seluruh lebar */
+    }
+
+    .font-footer {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+        font-size: 1.5em;
+        margin-left: 0.5em;
+    }
+
+    .img-size {
+        width: auto;
+        height: 3em;
     }
 }
