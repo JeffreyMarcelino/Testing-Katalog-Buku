@@ -38,15 +38,26 @@ footer {
     margin-left: 0.5em;
 }
 
-/* #logo,
-.logo-event {
+#logo-bbw {
     max-width: 200px;
     height: auto;
     margin: 10px 0;
-} */
+}
 
 .logo-event {
-    max-width: 500px;
+    max-width: 600px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.logo-sponsor {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Atur posisi gambar di tengah */
+}
+
+#logo-bca-dan-jandt {
+    max-width: 180px;
     height: auto;
     margin: 10px 0;
 }
