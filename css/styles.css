@@ -38,9 +38,15 @@ footer {
     margin-left: 0.5em;
 }
 
-#logo,
+/* #logo,
 .logo-event {
     max-width: 200px;
+    height: auto;
+    margin: 10px 0;
+} */
+
+.logo-event {
+    max-width: 500px;
     height: auto;
     margin: 10px 0;
 }
@@ -344,8 +350,15 @@ main {
 }
 
 #page-info {
+    color: #000000;
     margin: 20px 0; /* Sesuaikan margin sesuai kebutuhan */
     font-weight: bold;
+}
+
+#text-katalog-buku {
+    color: #005510;
+    text-align: left;
+    margin: 3rem 0 2rem 5.5rem;
 }
 
 /* Media Queries for Responsive Design */
@@ -489,6 +502,14 @@ main {
     .card-body {
         padding: 0.5rem;
         width: 100%;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    #text-katalog-buku {
+        margin: 3rem 0 2rem 1.8rem;
     }
 
     .font-footer {
