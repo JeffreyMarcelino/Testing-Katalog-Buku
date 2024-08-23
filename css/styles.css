@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -18,7 +19,7 @@ header {
 
 .top-header {
     display: flex;
-    flex-direction: column; /* Memastikan logo dan judul ditumpuk secara vertikal */
+    flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
 }
@@ -29,43 +30,40 @@ footer {
     padding: 2rem 0;
 }
 
+/* Font Styles */
 .font-footer {
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 800;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
     font-size: 2.375em;
     margin-left: 0.5em;
 }
 
-#logo {
-    max-width: 200px;
-}
-
+#logo,
 .logo-event {
-    max-width: 100%; /* Memastikan gambar tidak melebihi lebar kontainer */
-    height: auto; /* Menjaga proporsi gambar */
-    margin: 10px 0; /* Menambahkan jarak atas dan bawah */
+    max-width: 200px;
+    height: auto;
+    margin: 10px 0;
 }
 
-input[type="text"] {
+/* Input & Button Styles */
+input[type="text"],
+button {
     padding: 10px;
     margin: 10px 0;
-    width: 80%;
-    max-width: 400px;
-    border: 1px solid #ddd;
     border-radius: 4px;
 }
 
+input[type="text"] {
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+}
+
 button {
-    padding: 10px 20px;
     border: none;
     background-color: #333;
     color: #fff;
     cursor: pointer;
-    border-radius: 4px;
 }
 
 button:hover {
@@ -77,6 +75,7 @@ button:hover {
     background-color: transparent;
 }
 
+/* Book Catalog Styles */
 .book-catalog {
     display: flex;
     flex-wrap: wrap;
@@ -110,7 +109,8 @@ button:hover {
     margin: 10px 0;
 }
 
-.book-item p {
+.book-item p,
+.book-item a {
     font-size: 0.9em;
 }
 
@@ -128,37 +128,23 @@ button:hover {
     background-color: #555;
 }
 
-.loading {
+/* Price Label Styles */
+.book-price {
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 3px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    height: 200px;
-    font-size: 1.2em;
-    color: #555;
+    width: 100%;
 }
 
-.header-container {
-    display: flex;
-    align-items: center;
-}
-
-#search-input {
-    flex-grow: 1;
-    margin: 0px 20px;
-    width: 320px;
-}
-
-#home-button {
-    margin-left: 10px;
-}
-
-.dropdown {
-    margin-left: 10px;
-}
-
-.card {
-    margin: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.book-price .price-label,
+.book-price .new-price {
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 3px;
+    white-space: nowrap;
 }
 
 .new-price-children {
@@ -186,107 +172,7 @@ button:hover {
     color: #ffffff;
 }
 
-.book-price.new-price-children {
-    background-color: #CF1A21;
-    color: #ffffff;
-}
-
-.book-price.new-price-fiction {
-    background-color: #F8E52D;
-    color: #000000;
-}
-
-.book-price.new-price-non-fiction {
-    background-color: #92b6f0;
-    color: #000000;
-}
-
-.book-price.new-price-korean {
-    background-color: #FEA6D3;
-    color: #000000;
-}
-
-.book-price.new-price-bca {
-    background-color: #0061AF;
-    color: #ffffff;
-}
-
-.book-price .price-label {
-    /* margin: 0 5px; */
-    display: inline-block;
-    white-space: nowrap;
-}
-
-.book-price .new-price {
-    /* margin-left: 5px; */
-    padding: 2px 5px;
-    border-radius: 3px;
-    display: inline-block;
-    white-space: nowrap;
-}
-
-.book-price {
-    font-size: 1em;
-    font-weight: bold;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-}
-
-.card-title-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.card-title {
-    margin: 0;
-    text-align: center;
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* Jumlah baris yang ditampilkan sebelum dipotong */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.card-title-wrapper:hover .card-title {
-    white-space: normal;
-    overflow: visible;
-    -webkit-line-clamp: unset; /* Menghapus batasan baris saat dihover */
-}
-
-.card-text {
-    text-align: left;
-}
-
-.card-text.isbn {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.card-text.sub-category {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    text-align: center;
-}
-
+/* Skeleton Loader */
 .skeleton-loader {
     display: flex;
     flex-direction: column;
@@ -297,20 +183,23 @@ button:hover {
     width: 18rem;
     height: 360px;
     margin: 10px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-loader .skeleton-img,
+.skeleton-loader .skeleton-text {
+    background-color: #ddd;
+    border-radius: 4px;
 }
 
 .skeleton-loader .skeleton-img {
     width: 100%;
     height: 60%;
-    background-color: #ddd;
-    border-radius: 4px 4px 0 0;
 }
 
 .skeleton-loader .skeleton-text {
     width: 80%;
     height: 20px;
-    background-color: #ddd;
-    border-radius: 4px;
     margin: 10px 0;
 }
 
@@ -326,7 +215,16 @@ button:hover {
     width: 90%;
 }
 
-/* Gaya untuk dropdown pada tampilan mobile */
+@keyframes pulse {
+    0%, 100% {
+        background-color: #e0e0e0;
+    }
+    50% {
+        background-color: #f4f4f4;
+    }
+}
+
+/* Mobile Dropdown Styles */
 .mobile-nav {
     display: none; /* Defaultnya tersembunyi */
     position: relative;
@@ -367,60 +265,90 @@ button:hover {
     background-color: #555;
 }
 
-@keyframes pulse {
-    0% {
-        background-color: #e0e0e0;
-    }
-    50% {
-        background-color: #f4f4f4;
-    }
-    100% {
-        background-color: #e0e0e0;
-    }
+/* Card & Title Styles */
+.card {
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.skeleton-loader .skeleton-img,
-.skeleton-loader .skeleton-text {
-    animation: pulse 1.5s infinite ease-in-out infinite;
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
 }
 
-@keyframes loading {
-    0% {
-        background-color: #e0e0e0;
-    }
-    50% {
-        background-color: #f0f0f0;
-    }
-    100% {
-        background-color: #e0e0e0;
-    }
+.card-title-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
-#all-button {
-    margin: 0 0 0 10px;
+.card-title {
+    margin: 0;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-#children-button {
-    margin: 0 0 0 10px;
+.card-title-wrapper:hover .card-title {
+    white-space: normal;
+    overflow: visible;
+    -webkit-line-clamp: unset;
 }
 
-#fiction-button {
-    margin: 0 0 0 10px;
+.card-text.isbn, .card-text.sub-category {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
 }
 
-#non-fiction-button {
-    margin: 0 0 0 10px;
+.header-container {
+    display: flex;
+    align-items: center;
 }
 
-#korean-button {
-    margin: 0 0 0 10px;
+#all-button, #children-button, 
+#fiction-button, #non-fiction-button, 
+#korean-button, #bca-button, #search-button {
+    white-space: nowrap; /* Mencegah teks ter-wrap */
+    text-align: center;  /* Memusatkan teks */
+    width: auto;         /* Menyesuaikan lebar dengan isi teks */
+    max-width: 100%;     /* Memastikan lebar maksimal tetap sesuai layar */
+    overflow: hidden;    /* Menghindari teks keluar dari tombol */
+    padding: 10px 15px;  /* Menambah padding untuk kenyamanan */
+    margin: 0 0.3rem;
 }
 
-#bca-button {
-    margin: 0 0 0 10px;
+#search-input {
+    width: 300px;        /* Menentukan lebar khusus untuk input pencarian */
+    max-width: 100%;     /* Memastikan lebar maksimal tetap sesuai layar */
+    padding: 10px;       /* Padding untuk kenyamanan */
+    margin: 0 0.3rem;    /* Margin untuk keselarasan dengan tombol */
+    border: 1px solid #ddd; /* Border seperti yang sudah ada */
+    border-radius: 4px;  /* Menjaga border-radius yang konsisten */
 }
 
-/* Khusus untuk tampilan desktop */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page-info {
+    margin: 20px 0; /* Sesuaikan margin sesuai kebutuhan */
+    font-weight: bold;
+}
+
+/* Media Queries for Responsive Design */
 @media (min-width: 769px) {
     .book-price .new-price {
         font-size: x-large;
@@ -434,111 +362,67 @@ button:hover {
     }
 }
 
-/* Khusus untuk tampilan mobile */
 @media (max-width: 768px) {
-    .book-price .price-label {
-        font-size: small;
-    }
-
     .card-img-top {
         padding-top: 30px;
         width: 100%;
         height: 240px;
-        object-fit: contain;
         display: block;
-        margin: 0 auto;
-        margin-bottom: 15px; /* Memberikan sedikit jarak antara gambar dan teks */
+        margin: 0 auto 15px;
     }
 
     .logo-event {
-        max-width: 90%; /* Lebar maksimum gambar pada tampilan mobile */
-        width: auto; /* Memastikan gambar menyesuaikan dengan lebar maksimum */
-        margin: 10px 0; /* Menambahkan jarak atas dan bawah */
+        max-width: 90%;
+        width: auto;
+        margin: 10px 0;
     }
 
     .header-container {
-        display: none; /* Sembunyikan header-container pada tampilan mobile */
+        display: none;
     }
 
     .mobile-nav {
-        display: block; /* Tampilkan dropdown pada tampilan mobile */
+        display: block;
     }
-    header {
-        flex-direction: column;
-        text-align: center;
+
+    /* Menambahkan styling untuk #mobile-search-container */
+    #mobile-search-container {
+        display: flex;
+        flex-direction: column; /* Mengatur arah vertikal */
+        align-items: center; /* Memusatkan elemen secara horizontal */
+        width: 100%;
+        margin: 10px 0; /* Memberi sedikit margin untuk kenyamanan */
+    }
+
+    #mobile-search-input {
+        width: 80%; /* Sesuaikan dengan ukuran input */
+        margin-bottom: 10px; /* Menambahkan jarak antara input dan button */
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    #mobile-search-button {
+        width: 20%; /* Ukuran lebar tombol lebih kecil */
+        padding: 8px; /* Mengurangi padding */
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 0.9em; /* Mengurangi ukuran font */
+    }
+
+    #mobile-search-button:hover {
+        background-color: #555;
     }
 
     #search-input {
         width: 100%;
         max-width: none;
         margin: 10px 0;
-        padding: 10px; /* Untuk memastikan placeholder tidak terlalu dekat dengan tepi input */
-        text-align: center; /* Menempatkan teks placeholder di tengah secara horizontal */
-    }
-
-    .header-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #home-button {
-        margin: 10px 0;
-    }
-
-    .dropdown {
-        margin: 10px 0;
-    }
-
-    .book-item {
-        width: calc(50% - 20px);
-    }
-
-    .book-price .new-price {
-        font-size: small; /* Mengatur kembali ke ukuran font default */
-    }
-
-    .book-catalog {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-
-    .book-item {
-        width: 48%;
-        margin-bottom: 20px;
-    }
-
-    .card {
-        width: 100%; /* Mengatur card untuk mengambil seluruh lebar layar */
-        max-width: 10rem; /* Lebar maksimum card */
-        margin: 8px auto; /* Margin atas dan bawah dengan jarak yang lebih kecil */
-        padding: 0.5rem; /* Mengurangi padding dalam card */
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Ini akan memusatkan konten horizontal (termasuk gambar) */
-        text-align: center; /* Opsional: Ini akan memusatkan teks dalam card */
-    }
-
-    .card img {
-        width: 100%; /* Memastikan gambar memenuhi lebar card */
-        height: auto; /* Menjaga proporsi gambar */
-    }
-
-    .card-body {
-        padding: 0.5rem; /* Mengurangi padding dalam card-body */
-        width: 100%; /* Memastikan body card mengambil seluruh lebar */
-    }
-
-    .card-title {
-        font-size: 0.75rem; /* Menyesuaikan ukuran font title */
-    }
-
-    .card-text {
-        font-size: 0.625rem; /* Menyesuaikan ukuran font teks */
-    }
-
-    .new-price {
-        font-size: 0.75rem; /* Menyesuaikan ukuran font untuk label harga */
+        padding: 10px;
+        text-align: center;
     }
 
     .skeleton-loader {
@@ -579,28 +463,32 @@ button:hover {
     .skeleton-text.short {
         width: 40%;
     }
-}
 
-@media (max-width: 576px) {
-    .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Ini akan memusatkan konten horizontal (termasuk gambar) */
-        text-align: center; /* Opsional: Ini akan memusatkan teks dalam card */
+    .book-item {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
     }
 
-    .card .card-img-top {
-        padding-top: 30px;
+    .book-catalog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem 2.5rem;
+    }
+
+    .card {
         width: 100%;
-        height: 240px;
-        object-fit: contain;
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 15px; /* Memberikan sedikit jarak antara gambar dan teks */
+        max-width: 10rem;
+        margin: 8px auto;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .card-body {
-        width: 100%; /* Memastikan body card mengambil seluruh lebar */
+        padding: 0.5rem;
+        width: 100%;
     }
 
     .font-footer {
