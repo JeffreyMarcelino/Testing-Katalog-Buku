@@ -7,6 +7,11 @@ document.addEventListener("DOMContentLoaded", function() {
         filteredBooks: [],
 
         init: function() {
+            window.scrollTo(0, 0);
+            const savedPage = localStorage.getItem('currentPage');
+            if (savedPage) {
+                this.currentPage = parseInt(savedPage, 10);
+            }
             this.fetchBooks();
             this.setupEventListeners();
         },
@@ -24,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     this.filteredBooks = this.allBooks;
                     this.displayBooks(this.filteredBooks, this.currentPage);
                     this.setupPagination(this.filteredBooks.length, this.booksPerPage);
+                    window.scrollTo(0, 0); // Tambahkan ini di sini
                 })
                 .catch(error => console.error('Error:', error));
         },
@@ -284,7 +290,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         changePage: function(newPage, pageCount) {
             if (newPage >= 1 && newPage <= pageCount) {
+                window.scrollTo(0, 0); // Tambahkan ini di sini
                 this.currentPage = newPage;
+                localStorage.setItem('currentPage', this.currentPage); // Simpan halaman saat ini ke localStorage
                 this.displayBooks(this.filteredBooks, this.currentPage);
                 this.setupPagination(this.filteredBooks.length, this.booksPerPage);
             }
