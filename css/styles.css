@@ -216,11 +216,6 @@ button:hover {
     border-radius: 3px;
 }
 
-#announce-and-ojk {
-    text-align: center;
-    margin: 0 0 0.8rem 0;
-}
-
 /* Skeleton Loader */
 .skeleton-loader {
     display: flex;
