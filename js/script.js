@@ -6,12 +6,28 @@ document.addEventListener("DOMContentLoaded", function() {
         searchQuery: '',
         allBooks: [],
         filteredBooks: [],
+        isFirstVisit: true,  // Tambahkan ini
 
         init() {
             window.scrollTo(0, 0);
+            this.checkFirstVisit();
             this.loadState();
-            this.fetchBooks();
+            this.fetchBooks().then(() => {
+                if (this.isFirstVisit) {
+                    this.filterByCategory('CHILDREN');
+                } else {
+                    this.updateBookDisplay();
+                }
+            });
             this.setupEventListeners();
+        },
+
+        checkFirstVisit() {
+            this.isFirstVisit = !localStorage.getItem('hasVisited');
+            if (this.isFirstVisit) {
+                localStorage.setItem('hasVisited', 'true');
+                this.category = 'CHILDREN';
+            }
         },
 
         loadState() {
@@ -31,14 +47,13 @@ document.addEventListener("DOMContentLoaded", function() {
         },
 
         fetchBooks() {
-            fetch('books.json')
+            return fetch('books.json')
                 .then(response => {
                     if (!response.ok) throw new Error('Network response was not OK: ' + response.statusText);
                     return response.json();
                 })
                 .then(data => {
                     this.allBooks = this.processBookData(data);
-                    this.updateBookDisplay();
                 })
                 .catch(error => console.error('Error:', error));
         },
