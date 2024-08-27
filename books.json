@@ -6932,14 +6932,463 @@
       "categoryName": "JUDUL PILIHAN BCA",
       "subCategories": [
         {
-          "subCategoryName": "BCA Picks",
+          "subCategoryName": "ACTIVITY BOOK",
           "books": [
             {
-              "ISBN": "9788765432109",
-              "TITLE": "BCA Recommended Read",
-              "Normal": "85.000",
+              "ISBN": "9788854414358",
+              "TITLE": "THE MONTESSORI METHOD : ANIMALS (BOOK)",
+              "Normal": "",
               "Harga BBW": "80.000",
-              "COVER_URL": "https://example.com/bca-book-1.jpg"
+              "Harga PROMO": "56.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9788854414358_001-page1_64d427f7-470b-4112-9390-991a58867ce9_533x.jpg?v=1648786678"
+            },
+            {
+              "ISBN": "9781408888636",
+              "TITLE": "BLOOMSBURY ACTIVITY: FOLD-UP WILDLIFE FACTS",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "Harga PROMO": "56.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781408888636_1_533x.jpg?v=1648788832"
+            },
+            {
+              "ISBN": "9781787006324",
+              "TITLE": "WIPE CLEAN : I CAN DO IT! DIVIDING SUMS",
+              "Normal": "",
+              "Harga BBW": "101.000",
+              "Harga PROMO": "70.700",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781787006324_a_533x.png?v=1700708055"
+            },
+            {
+              "ISBN": "9781787006348",
+              "TITLE": "WIPE CLEAN : I CAN DO IT! TAKING AWAY",
+              "Normal": "",
+              "Harga BBW": "101.000",
+              "Harga PROMO": "70.700",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781787006348_a_533x.png?v=1700708550"
+            },
+            {
+              "ISBN": "9781787006317",
+              "TITLE": "WIPE CLEAN : I CAN DO IT! TIMES TABLES",
+              "Normal": "",
+              "Harga BBW": "101.000",
+              "Harga PROMO": "70.700",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781787006317_1_533x.jpg?v=1649909084"
+            },
+            {
+              "ISBN": "9781787006355",
+              "TITLE": "WIPE CLEAN : I CAN DO IT! PHONICS WORD SOUNDS",
+              "Normal": "",
+              "Harga BBW": "101.000",
+              "Harga PROMO": "70.700",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781787006355_a_533x.png?v=1700708464"
+            },
+            {
+              "ISBN": "9781787006300",
+              "TITLE": "WIPE CLEAN : I CAN DO IT! ADDING UP",
+              "Normal": "",
+              "Harga BBW": "101.000",
+              "Harga PROMO": "70.700",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781787006300_a_533x.png?v=1700708822"
+            }
+          ]
+        },
+        {
+          "subCategoryName": "BOARD BOOK",
+          "books": [
+            {
+              "ISBN": "9788854414105",
+              "TITLE": "THE RETURN OF TOPSY TURVY MONSTER",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "Harga PROMO": "63.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9788854414105_a_533x.png?v=1700707251"
+            },
+            {
+              "ISBN": "9781648333446",
+              "TITLE": "MOTHER GOOSE BEDTIME COLLECTION",
+              "Normal": "",
+              "Harga BBW": "140.000",
+              "Harga PROMO": "98.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781648333446_3_576x_d6e89dea-5d0f-49c3-ad41-75e338ecf290_533x.png?v=1695278827"
+            },
+            {
+              "ISBN": "9781947788572",
+              "TITLE": "MY FIRST NURSERY RHYMES",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "Harga PROMO": "63.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/MYFIRSTNURSERYRHYMESKidsBookFront_576x_0d099365-a246-432d-bd31-6f51c18fea61_533x.png?v=1685711579"
+            },
+            {
+              "ISBN": "9781788811231",
+              "TITLE": "THIS LITTLE PIGGY",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "Harga PROMO": "56.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781788811231_1_533x.jpg?v=1648785754"
+            }
+          ]
+        },
+        {
+          "subCategoryName": "CHILDREN REFERENCE",
+          "books": [
+            {
+              "ISBN": "9780241433157",
+              "TITLE": "MEGABITES: DINOSAURS- RIVETING READS FOR CURIOUS KIDS",
+              "Normal": "",
+              "Harga BBW": "62.000",
+              "Harga PROMO": "43.400",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9780241433157_1_165x.jpg?v=1678434850"
+            },
+            {
+              "ISBN": "9780062977786",
+              "TITLE": "IDOLS OF K-POP",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "Harga PROMO": "56.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9780062977786_a_533x.png?v=1693297075"
+            },
+            {
+              "ISBN": "9781783125104",
+              "TITLE": "THE ATLAS OF GREAT JOURNEYS: THE STORY OF DISCOVERY IN AMAZING MAPS",
+              "Normal": "",
+              "Harga BBW": "175.000",
+              "Harga PROMO": "122.500",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/Screenshot2023-07-10143111-fotor-20230710143229_576x.png?v=1688970760"
+            },
+            {
+              "ISBN": "9781786270900",
+              "TITLE": "EGYPTOMANIA",
+              "Normal": "",
+              "Harga BBW": "160.000",
+              "Harga PROMO": "112.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781786270900_1_533x.jpg?v=1648787792"
+            }
+          ]
+        },
+        {
+          "subCategoryName": "COLOURING",
+          "books": [
+            {
+              "ISBN": "9781909865259",
+              "TITLE": "KEEP CALM & COLOUR UNICORNS",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "Harga PROMO": "56.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/91YgltnVXTL_533x.jpg?v=1704343385"
+            }
+          ]
+        },
+        {
+          "subCategoryName": "POP UP BOOK",
+          "books": [
+            {
+              "ISBN": "9781683838746",
+              "TITLE": "GAME OF THRONES: A POP-UP GUIDE TO WESTEROS",
+              "Normal": "",
+              "Harga BBW": "560.000",
+              "Harga PROMO": "392.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781683838746_a_f9b1670d-35ef-4cad-8e7c-1a80fa68e181_533x.png?v=1709019018"
+            },
+            {
+              "ISBN": "9780500517499",
+              "TITLE": "STAR TREK POP-UPS",
+              "Normal": "",
+              "Harga BBW": "118.000",
+              "Harga PROMO": "82.600",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9780500517499__FRONT_533x.jpg?v=1648784480"
+            }
+          ]
+        },
+        {
+          "subCategoryName": "READER",
+          "books": [
+            {
+              "ISBN": "9781786174383",
+              "TITLE": "D160 ILL. CLASSIC SECRET GDN",
+              "Normal": "",
+              "Harga BBW": "160.000",
+              "Harga PROMO": "112.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781786174383_a_533x.png?v=1700704356"
+            }
+          ]
+        },
+        {
+          "subCategoryName": "STICKER BOOK",
+          "books": [
+            {
+              "ISBN": "9781408898871",
+              "TITLE": "THE DEEP STICKER ACTIVITY BOOK",
+              "Normal": "",
+              "Harga BBW": "45.000",
+              "Harga PROMO": "31.500",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781408898871_1_0479a9ba-3161-40ad-85f8-21d3a284e908_533x.jpg?v=1697100994"
+            },
+            {
+              "ISBN": "9781743469392",
+              "TITLE": "HOW TO TRAIN YOUR DRAGON 2 DELUXE STICKER",
+              "Normal": "",
+              "Harga BBW": "51.000",
+              "Harga PROMO": "35.700",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781743469392_a_533x.png?v=1710142683"
+            }
+          ]
+        },
+        {
+          "subCategoryName": "WORK BOOK",
+          "books": [
+            {
+              "ISBN": "9781788104111",
+              "TITLE": "HWH EXPERT 9+: HELP WITH HOMEWORK: 9+ YEARS ENGLISH ESSENTIALS",
+              "Normal": "",
+              "Harga BBW": "51.000",
+              "Harga PROMO": "35.700",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781788104111_a_533x.png?v=1698200212"
+            },
+            {
+              "ISBN": "9781789051209",
+              "TITLE": "HELP WITH HOMEWORK: 7+ ENGLISH",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "Harga PROMO": "56.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781789051209-1_533x.jpg?v=1648786518"
+            },
+            {
+              "ISBN": "9781789051223",
+              "TITLE": "HELP WITH HOMEWORK: 9+ ENGLISH",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "Harga PROMO": "56.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781789051223_1_6a576758-9567-4774-b1c6-72eec0473432_533x.jpg?v=1648786519"
+            }
+          ]
+        },
+        {
+          "subCategoryName": "ROMANCE",
+          "books": [
+            {
+              "ISBN": "9781408730522",
+              "TITLE": "THE CHOICE",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "Harga PROMO": "63.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781408730522_1_2427d278-7164-4590-b43e-82f5c646e537_533x.jpg?v=1696323936"
+            },
+            {
+              "ISBN": "9781420153774",
+              "TITLE": "A DUKE FOR DIANA",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "Harga PROMO": "56.000",
+              "COVER_URL": "https://m.media-amazon.com/images/I/51NbyPTuJPL._SY445_SX342_.jpg"
+            },
+            {
+              "ISBN": "9780786890934",
+              "TITLE": "PS, I LOVE YOU",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "Harga PROMO": "63.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9780786890934_a_533x.png?v=1694677742"
+            }
+          ]
+        },
+        {
+          "subCategoryName": "YOUNG ADULT",
+          "books": [
+            {
+              "ISBN": "9780007230587",
+              "TITLE": "ALONE ON A WIDE WIDE SEA",
+              "Normal": "",
+              "Harga BBW": "101.000",
+              "Harga PROMO": "70.700",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9780007230587_a_533x.png?v=1700109955"
+            },
+            {
+              "ISBN": "9781444929676",
+              "TITLE": "TRUE COLOUR OF FOREVER",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "Harga PROMO": "63.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781444929676_1_533x.jpg?v=1648792829"
+            },
+            {
+              "ISBN": "9781405930574",
+              "TITLE": "GROWING PAINS OF ADRIAN MOLE",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "Harga PROMO": "63.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781405930574_1_533x.jpg?v=1648782015"
+            },
+            {
+              "ISBN": "9781405930567",
+              "TITLE": "SECRET DIARY OF ADRIAN MOLE AGED 13 3/4",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "Harga PROMO": "63.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781405930567_1_6aa49d25-0b44-4de2-a06b-3d9c89cebfb3_533x.jpg?v=1648782018"
+            },
+            {
+              "ISBN": "9780571337033",
+              "TITLE": "TESS OF THE D'URBERVILLES",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "Harga PROMO": "63.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9780571337033_1_533x.jpg?v=1648786433"
+            }
+          ]
+        },
+        {
+          "subCategoryName": "BAKING",
+          "books": [
+            {
+              "ISBN": "9780753725764",
+              "TITLE": "THE AUSTRALIAN WOMEN'S WEEKLY KIDS BIRTHDAY CAKES",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "Harga PROMO": "56.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/the-australian-women-s-weekly-kids-birthday-cakes-v2-9780753725764-28937948201138_360x.jpg?v=1648784202"
+            }
+          ]
+        },
+        {
+          "subCategoryName": "BUSINESS",
+          "books": [
+            {
+              "ISBN": "9781849836920",
+              "TITLE": "THE MILLIONAIRE MESSENGER",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "Harga PROMO": "63.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781849836920_1_533x.jpg?v=1648784286"
+            },
+            {
+              "ISBN": "9781529343762",
+              "TITLE": "YOU ARE A BADASS",
+              "Normal": "",
+              "Harga BBW": "130.000",
+              "Harga PROMO": "91.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781529343762_1_681fb7b7-29c5-4640-9a8b-f35eb5f1e006_533x.jpg?v=1648787133"
+            }
+          ]
+        },
+        {
+          "subCategoryName": "COOKING",
+          "books": [
+            {
+              "ISBN": "9781743369500",
+              "TITLE": "LOVE YOUR LUNCH COOKBOOK",
+              "Normal": "",
+              "Harga BBW": "118.000",
+              "Harga PROMO": "82.600",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781743369500_1_f86c62d7-03e9-4931-aa6a-9e22f0947cbc_533x.jpg?v=1648791151"
+            },
+            {
+              "ISBN": "9780857833686",
+              "TITLE": "SKINNY SALADS",
+              "Normal": "",
+              "Harga BBW": "101.000",
+              "Harga PROMO": "70.700",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9780857833686_1_533x.jpg?v=1680827587"
+            }
+          ]
+        },
+        {
+          "subCategoryName": "HEALTH & WELLNESS",
+          "books": [
+            {
+              "ISBN": "9780316421065",
+              "TITLE": "THE POWER OF TRANQUILITY IN A VERY NOISY WORLD",
+              "Normal": "",
+              "Harga BBW": "101.000",
+              "Harga PROMO": "70.700",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9780316421065_1_218fc3c0-86cb-444a-a3fc-f0c32b7db81f_533x.jpg?v=1698657532"
+            }
+          ]
+        },
+        {
+          "subCategoryName": "HOME & GARDEN",
+          "books": [
+            {
+              "ISBN": "9781849942805",
+              "TITLE": "HOME STICKER BOOK",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "Harga PROMO": "63.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781849942805_1_533x.jpg?v=1648786758"
+            },
+            {
+              "ISBN": "9781681888378",
+              "TITLE": "365 QUICK & EASY HOME CLEANING",
+              "Normal": "",
+              "Harga BBW": "118.000",
+              "Harga PROMO": "82.600",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781681888378_a_533x.jpg?v=1721708523"
+            }
+          ]
+        },
+        {
+          "subCategoryName": "LANGUAGE",
+          "books": [
+            {
+              "ISBN": "9781782430117",
+              "TITLE": "USED TO KNOW THAT: SPILLING THE BEANS ON THE CAT'S PYJAMAS",
+              "Normal": "",
+              "Harga BBW": "80.000",
+              "Harga PROMO": "56.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9781782430117_a_576x.png?v=1698393757"
+            }
+          ]
+        },
+        {
+          "subCategoryName": "SELF HELP",
+          "books": [
+            {
+              "ISBN": "9788854414174",
+              "TITLE": "365 MEDITATIONS",
+              "Normal": "",
+              "Harga BBW": "160.000",
+              "Harga PROMO": "112.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/files/9788854414174_a_533x.png?v=1699590459"
+            },
+            {
+              "ISBN": "9788854413047",
+              "TITLE": "365 DAYS OF SMILES",
+              "Normal": "",
+              "Harga BBW": "160.000",
+              "Harga PROMO": "112.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9788854413047-1_533x.jpg?v=1648787658"
+            },
+            {
+              "ISBN": "9788854414709",
+              "TITLE": "365 DAYS OF PEACE",
+              "Normal": "",
+              "Harga BBW": "160.000",
+              "Harga PROMO": "112.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9788854414709_1_533x.jpg?v=1648788636"
+            },
+            {
+              "ISBN": "9781786782151",
+              "TITLE": "365 WAYS TO FIND PEACE: MEDITATIONS & INSPIRATIONS",
+              "Normal": "",
+              "Harga BBW": "90.000",
+              "Harga PROMO": "63.000",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781786782151_1_165x.jpg?v=1672200389"
+            },
+            {
+              "ISBN": "9781529378474",
+              "TITLE": "HAPPINESS: YOUR ROUTE-MAP TO INNER JOY",
+              "Normal": "",
+              "Harga BBW": "101.000",
+              "Harga PROMO": "70.700",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/happiness-your-route-map-to-inner-joy-9781529378474-15148038160428_533x.jpg?v=1648787365"
+            },
+            {
+              "ISBN": "9781785784613",
+              "TITLE": "HOW TO BE A PRODUCTIVITY NINJA UPDATED EDITION",
+              "Normal": "",
+              "Harga BBW": "101.000",
+              "Harga PROMO": "70.700",
+              "COVER_URL": "https://www.bookxcess.com/cdn/shop/products/9781785784613_1_10030bfe-7ead-4f26-a340-d214e088c918_533x.jpg?v=1687915493"
             }
           ]
         }

@@ -185,8 +185,35 @@ button:hover {
 }
 
 .new-price-bca {
+    color: #000000;
+}
+
+.old-price {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 0.1rem;
+}
+
+/* Price Label Styles */
+.book-price {
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.promo-price {
     background-color: #0061AF;
     color: #ffffff;
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    border-radius: 3px;
 }
 
 /* Skeleton Loader */
@@ -387,6 +414,10 @@ main {
 }
 
 @media (max-width: 768px) {
+    .promo-price {
+        font-size: medium;
+    }
+
     .card-img-top {
         padding-top: 30px;
         width: 100%;

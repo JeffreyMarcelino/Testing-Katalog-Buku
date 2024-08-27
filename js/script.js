@@ -1,119 +1,136 @@
 document.addEventListener("DOMContentLoaded", function() {
     const App = {
         booksPerPage: 25,
-        halfBooksPerPage: 5,
         currentPage: 1,
+        category: 'ALL',
+        searchQuery: '',
         allBooks: [],
         filteredBooks: [],
 
-        init: function() {
+        init() {
             window.scrollTo(0, 0);
-            const savedPage = localStorage.getItem('currentPage');
-            if (savedPage) {
-                this.currentPage = parseInt(savedPage, 10);
-            }
+            this.loadState();
             this.fetchBooks();
             this.setupEventListeners();
         },
 
-        fetchBooks: function() {
+        loadState() {
+            const savedState = ['currentPage', 'category', 'searchQuery'].reduce((acc, key) => {
+                acc[key] = localStorage.getItem(key) || this[key];
+                return acc;
+            }, {});
+            
+            Object.assign(this, savedState);
+            this.currentPage = parseInt(this.currentPage, 10);
+        },
+
+        saveState() {
+            ['currentPage', 'category', 'searchQuery'].forEach(key => 
+                localStorage.setItem(key, this[key])
+            );
+        },
+
+        fetchBooks() {
             fetch('books.json')
                 .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok ' + response.statusText);
-                    }
+                    if (!response.ok) throw new Error('Network response was not OK: ' + response.statusText);
                     return response.json();
                 })
                 .then(data => {
                     this.allBooks = this.processBookData(data);
-                    this.filteredBooks = this.allBooks;
-                    this.displayBooks(this.filteredBooks, this.currentPage);
-                    this.setupPagination(this.filteredBooks.length, this.booksPerPage);
-                    window.scrollTo(0, 0); // Tambahkan ini di sini
+                    this.updateBookDisplay();
                 })
                 .catch(error => console.error('Error:', error));
         },
 
-        processBookData: function(data) {
-            return data.categories.reduce((accumulator, category) => {
-                category.subCategories.forEach(subCategory => {
-                    accumulator.push(...subCategory.books.map(book => ({
+        processBookData(data) {
+            return data.categories.flatMap(category => 
+                category.subCategories.flatMap(subCategory => 
+                    subCategory.books.map(book => ({
                         ...book,
                         CATEGORY: `${category.categoryName} ${subCategory.subCategoryName}`,
                         subCategoryName: subCategory.subCategoryName
-                    })));
-                });
-                return accumulator;
-            }, []);
+                    }))
+                )
+            );
         },
 
-        setupEventListeners: function() {
-            document.getElementById('search-button').addEventListener('click', () => this.handleSearch('search-input'));
-            document.getElementById('all-button').addEventListener('click', () => this.handleAllBooks());
-            document.getElementById('children-button').addEventListener('click', () => this.filterByCategory("CHILDREN"));
-            document.getElementById('fiction-button').addEventListener('click', () => this.filterByCategory("FICTION"));
-            document.getElementById('non-fiction-button').addEventListener('click', () => this.filterByCategory("NON FICTION"));
-            document.getElementById('korean-button').addEventListener('click', () => this.filterByCategory("KOREAN BOOK"));
-            document.getElementById('bca-button').addEventListener('click', () => this.filterByCategory("JUDUL PILIHAN BCA"));
+        setupEventListeners() {
+            const eventMap = {
+                'search-button': () => this.handleSearch('search-input'),
+                'all-button': () => this.handleAllBooks(),
+                'children-button': () => this.filterByCategory("CHILDREN"),
+                'fiction-button': () => this.filterByCategory("FICTION"),
+                'non-fiction-button': () => this.filterByCategory("NON FICTION"),
+                'korean-button': () => this.filterByCategory("KOREAN BOOK"),
+                'bca-button': () => this.filterByCategory("JUDUL PILIHAN BCA"),
+                'mobile-search-button': () => this.handleSearch('mobile-search-input'),
+                'mobile-nav-button': this.toggleMobileNavDropdown,
+                'mobile-all-button': () => this.handleCategorySelection("ALL"),
+                'mobile-children-button': () => this.handleCategorySelection("CHILDREN"),
+                'mobile-fiction-button': () => this.handleCategorySelection("FICTION"),
+                'mobile-non-fiction-button': () => this.handleCategorySelection("NON FICTION"),
+                'mobile-korean-button': () => this.handleCategorySelection("KOREAN BOOK"),
+                'mobile-bca-button': () => this.handleCategorySelection("JUDUL PILIHAN BCA")
+            };
 
-            // Mobile-specific listeners
-            document.getElementById('mobile-search-button').addEventListener('click', () => this.handleSearch('mobile-search-input'));
-            document.getElementById('mobile-nav-button').addEventListener('click', this.toggleMobileNavDropdown);
-            document.getElementById('mobile-all-button').addEventListener('click', () => this.handleCategorySelection("ALL"));
-            document.getElementById('mobile-children-button').addEventListener('click', () => this.handleCategorySelection("CHILDREN"));
-            document.getElementById('mobile-fiction-button').addEventListener('click', () => this.handleCategorySelection("FICTION"));
-            document.getElementById('mobile-non-fiction-button').addEventListener('click', () => this.handleCategorySelection("NON FICTION"));
-            document.getElementById('mobile-korean-button').addEventListener('click', () => this.handleCategorySelection("KOREAN BOOK"));
-            document.getElementById('mobile-bca-button').addEventListener('click', () => this.handleCategorySelection("JUDUL PILIHAN BCA"));
+            Object.entries(eventMap).forEach(([id, handler]) => 
+                document.getElementById(id).addEventListener('click', handler)
+            );
         },
 
-        handleSearch: function(inputId) {
-            const searchTerm = document.getElementById(inputId).value.toLowerCase();
-            const bookCatalog = document.getElementById('book-catalog');
-            bookCatalog.innerHTML = '<div class="loading">Loading...</div>';
-            setTimeout(() => {
-                this.filteredBooks = this.filterBooks(this.allBooks, searchTerm);
-                if (this.filteredBooks.length === 0) {
-                    bookCatalog.innerHTML = '<div class="loading">No books found.</div>';
-                } else {
-                    this.currentPage = 1;
-                    this.displayBooks(this.filteredBooks, this.currentPage);
-                    this.setupPagination(this.filteredBooks.length, this.booksPerPage);
-                }
-            }, 1000);
+        handleSearch(inputId) {
+            this.searchQuery = document.getElementById(inputId).value.toLowerCase();
+            this.resetAndUpdate();
         },
 
-        handleAllBooks: function() {
+        handleAllBooks() {
+            this.searchQuery = '';
+            this.category = 'ALL';
             document.getElementById('search-input').value = '';
-            this.filteredBooks = this.allBooks;
-            this.currentPage = 1;
-            this.displayBooks(this.filteredBooks, this.currentPage);
-            this.setupPagination(this.filteredBooks.length, this.booksPerPage);
+            this.resetAndUpdate();
         },
 
-        filterByCategory: function(category) {
-            this.filteredBooks = this.allBooks.filter(book => book.CATEGORY.startsWith(category));
-            this.currentPage = 1;
-            this.displayBooks(this.filteredBooks, this.currentPage);
-            this.setupPagination(this.filteredBooks.length, this.booksPerPage);
+        filterByCategory(category) {
+            this.category = category;
+            this.searchQuery = '';
+            document.getElementById('search-input').value = '';
+            this.resetAndUpdate();
         },
 
-        toggleMobileNavDropdown: function() {
-            const mobileNavDropdown = document.getElementById('mobile-nav-dropdown');
-            mobileNavDropdown.style.display = mobileNavDropdown.style.display === 'block' ? 'none' : 'block';
+        toggleMobileNavDropdown() {
+            const dropdown = document.getElementById('mobile-nav-dropdown');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
         },
 
-        handleCategorySelection: function(category) {
-            if (category === "ALL") {
-                document.getElementById('mobile-search-input').value = '';
-                this.filteredBooks = this.allBooks;
-            } else {
-                this.filteredBooks = this.allBooks.filter(book => book.CATEGORY.startsWith(category));
-            }
-            this.currentPage = 1;
-            this.displayBooks(this.filteredBooks, this.currentPage);
-            this.setupPagination(this.filteredBooks.length, this.booksPerPage);
+        handleCategorySelection(category) {
+            this.category = category;
+            this.searchQuery = '';
+            document.getElementById('mobile-search-input').value = '';
+            this.resetAndUpdate();
             document.getElementById('mobile-nav-dropdown').style.display = 'none';
+        },
+
+        resetAndUpdate() {
+            this.currentPage = 1;
+            this.saveState();
+            this.updateBookDisplay();
+        },
+
+        updateBookDisplay() {
+            this.filterBooks();
+            this.displayBooks(this.filteredBooks, this.currentPage);
+            this.setupPagination(this.filteredBooks.length, this.booksPerPage);
+        },
+
+        filterBooks() {
+            this.filteredBooks = this.allBooks.filter(book => 
+                (this.category === 'ALL' || book.CATEGORY.startsWith(this.category)) &&
+                (!this.searchQuery || 
+                    book.TITLE.toLowerCase().includes(this.searchQuery) ||
+                    book.ISBN.toLowerCase().includes(this.searchQuery) ||
+                    book.CATEGORY.toLowerCase().includes(this.searchQuery))
+            );
         },
 
         displayBooks: function(books, page) {
@@ -121,13 +138,11 @@ document.addEventListener("DOMContentLoaded", function() {
             const end = start + this.booksPerPage;
             const paginatedBooks = books.slice(start, end);
             const bookCatalog = document.getElementById('book-catalog');
-        
+
             bookCatalog.innerHTML = this.createSkeletonLoaders();
-        
+
             setTimeout(() => {
                 bookCatalog.innerHTML = '';
-                
-                // Menggunakan loop untuk menampilkan buku dalam grid 2x5
                 paginatedBooks.forEach(book => {
                     bookCatalog.appendChild(this.createBookItem(book));
                 });
@@ -181,18 +196,33 @@ document.addEventListener("DOMContentLoaded", function() {
             bookIsbn.textContent = `ISBN: ${book.ISBN}`;
             cardBody.appendChild(bookIsbn);
         
-            if (book['Harga BBW']) {
+            if (book.CATEGORY.startsWith('JUDUL PILIHAN BCA')) {
+                if (book['Harga BBW']) {
+                    const bbwPriceWrapper = document.createElement('div');
+                    bbwPriceWrapper.className = 'book-price new-price-bca';
+        
+                    const bbwPrice = document.createElement('span');
+                    bbwPrice.className = 'old-price';
+                    bbwPrice.textContent = `Harga BBW : RP. ${book['Harga BBW']}`;
+                    bbwPriceWrapper.appendChild(bbwPrice);
+        
+                    if (book['Harga PROMO']) {
+                        const promoPrice = document.createElement('div');
+                        promoPrice.className = 'promo-price';
+                        promoPrice.textContent = `Harga Promo BCA : RP. ${book['Harga PROMO']}`;
+                        bbwPriceWrapper.appendChild(promoPrice);
+                    }
+        
+                    cardBody.appendChild(bbwPriceWrapper);
+                }
+            } else if (book['Harga BBW']) {
                 const bbwPriceWrapper = document.createElement('div');
                 bbwPriceWrapper.className = `book-price ${this.getPriceClass(book.CATEGORY)}`;
-        
-                const bbwPriceLabel = document.createElement('span');
-                bbwPriceLabel.className = 'price-label';
         
                 const bbwPrice = document.createElement('span');
                 bbwPrice.className = 'new-price';
                 bbwPrice.textContent = `RP. ${book['Harga BBW']}`;
         
-                bbwPriceWrapper.appendChild(bbwPriceLabel);
                 bbwPriceWrapper.appendChild(bbwPrice);
                 cardBody.appendChild(bbwPriceWrapper);
             }
@@ -213,7 +243,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 'KOREAN BOOK': 'new-price-korean',
                 'JUDUL PILIHAN BCA': 'new-price-bca'
             };
-            
+
             for (let key in categories) {
                 if (category.startsWith(key)) {
                     return categories[key];
@@ -226,14 +256,14 @@ document.addEventListener("DOMContentLoaded", function() {
             const pagination = document.getElementById('pagination');
             pagination.innerHTML = '';
             const pageCount = Math.ceil(totalBooks / booksPerPage);
-        
+
             const isMobile = window.innerWidth <= 576;
             const maxVisiblePages = isMobile ? 3 : 7;
             const halfVisiblePages = Math.floor(maxVisiblePages / 2);
-        
+
             let startPage = this.currentPage - halfVisiblePages;
             let endPage = this.currentPage + halfVisiblePages;
-        
+
             if (startPage < 1) {
                 startPage = 1;
                 endPage = Math.min(maxVisiblePages, pageCount);
@@ -241,17 +271,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 endPage = pageCount;
                 startPage = Math.max(1, pageCount - maxVisiblePages + 1);
             }
-        
-            // Tambahkan informasi page di atas pagination
+
             const pageInfo = document.getElementById('page-info');
             if (pageInfo) {
                 pageInfo.textContent = `Page ${this.currentPage} of ${pageCount} - ${totalBooks} results`;
             }
-        
+
             for (let i = startPage; i <= endPage; i++) {
                 pagination.appendChild(this.createPageItem(i, pageCount));
             }
-        
+
             if (!isMobile) {
                 pagination.insertBefore(this.createNavigationButton('Previous', () => this.changePage(this.currentPage - 1, pageCount)), pagination.firstChild);
                 pagination.appendChild(this.createNavigationButton('Next', () => this.changePage(this.currentPage + 1, pageCount)));
@@ -290,20 +319,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         changePage: function(newPage, pageCount) {
             if (newPage >= 1 && newPage <= pageCount) {
-                window.scrollTo(0, 0); // Tambahkan ini di sini
                 this.currentPage = newPage;
-                localStorage.setItem('currentPage', this.currentPage); // Simpan halaman saat ini ke localStorage
+                this.saveState();
                 this.displayBooks(this.filteredBooks, this.currentPage);
                 this.setupPagination(this.filteredBooks.length, this.booksPerPage);
+                window.scrollTo(0, 0);
             }
-        },
-
-        filterBooks: function(books, searchTerm) {
-            return books.filter(book => 
-                book.TITLE.toLowerCase().includes(searchTerm) ||
-                book.ISBN.toLowerCase().includes(searchTerm) ||
-                book.CATEGORY.toLowerCase().includes(searchTerm)
-            );
         }
     };
 
